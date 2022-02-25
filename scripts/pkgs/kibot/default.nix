@@ -15,6 +15,7 @@ let
     };
 
     propagatedBuildInputs = with python3Packages; [
+      kicad
       psutil
       xvfbwrapper
     ];
