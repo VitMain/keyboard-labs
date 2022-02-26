@@ -2,9 +2,14 @@
 , fetchFromGitHub
 , python3Packages
 , use-vglrun ? false
+, python3
+, kicad
 }:
 
 let
+  kicadPythonModule = python3Packages.toPythonModule (kicad.override {
+    inherit python3;
+  }).src;
   kiauto = python3Packages.buildPythonPackage rec {
     pname = "kiauto";
     version = "1.5.14";
@@ -15,7 +20,7 @@ let
     };
 
     propagatedBuildInputs = with python3Packages; [
-      kicad
+      kicadPythonModule
       psutil
       xvfbwrapper
     ];
@@ -50,7 +55,7 @@ python3Packages.buildPythonApplication rec {
   propagatedBuildInputs = with python3Packages; [
     colorama
     kiauto
-    kicad
+    kicadPythonModule
     pyyaml
     requests
     XlsxWriter

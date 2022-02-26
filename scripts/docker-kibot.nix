@@ -5,35 +5,33 @@
       rev = "89f196fe781c53cb50fef61d3063fa5e8d61b6e5";
   }) {}
 , tag ? "latest"
+, kicad-with3d ? true
 }:
 
 with pkgs;
 let
-  kibot = callPackage ./pkgs/kibot { use-vglrun = false; };
-  pcbdraw = callPackage ./pkgs/pcbdraw {};
+  my-kicad = pkgs.kicad.override {
+    pname = "kicad-docker";
+    withOCC = false;
+    with3d = kicad-with3d;
+  };
+  kibot = callPackage ./pkgs/kibot { kicad = my-kicad; use-vglrun = false; };
+  pcbdraw = callPackage ./pkgs/pcbdraw { kicad = my-kicad; };
   recordmydesktop = callPackage ./pkgs/recordmydesktop {};
 in
 pkgs.dockerTools.buildLayeredImage {
   inherit tag;
 
-  name = "rgoulter/kibot";
+  name = "richardgoulter/kibot";
 
   extraCommands = "mkdir -m 0777 tmp";
 
   contents = [
     bash
     coreutils
-    fluxbox
     kibot
     pcbdraw
-    recordmydesktop
-    turbovnc
-    virtualgl
-    wmctrl
-    x11vnc
-    xclip
     xdotool
-    xorg.xkbcomp
   ];
 
   config = {
