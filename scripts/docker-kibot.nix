@@ -4,6 +4,7 @@
       ref = "refs/heads/nixpkgs-unstable";
       rev = "89f196fe781c53cb50fef61d3063fa5e8d61b6e5";
   }) {}
+, docker-image-name ? "richardgoulter/kibot"
 , tag ? "latest"
 , kicad-with3d ? true
 }:
@@ -22,7 +23,7 @@ in
 pkgs.dockerTools.buildLayeredImage {
   inherit tag;
 
-  name = "richardgoulter/kibot";
+  name = docker-image-name;
 
   extraCommands = "mkdir -m 0777 tmp";
 
