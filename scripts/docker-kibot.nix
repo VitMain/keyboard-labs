@@ -30,14 +30,23 @@ pkgs.dockerTools.buildLayeredImage {
   contents = [
     bash
     coreutils
+    glibcLocales
     kibot
+    recordmydesktop
+    turbovnc
+    virtualgl
+    wmctrl
+    x11vnc
+    xclip
     pcbdraw
     xdotool
+    xorg.xkbcomp
   ];
 
   config = {
     Env = [
       "KICAD_SYMBOL_DIR=${kicad.libraries.symbols}/share/kicad/library"
+      "LOCALE_ARCHIVE=${glibcLocales}/lib/locale/locale-archive"
     ];
   };
 }
