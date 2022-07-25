@@ -1170,7 +1170,7 @@
     (property "Value" "~" (id 1) (at 50.8 180.213 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "ProjectLocal:H_M2_Spacer_Hole" (id 2) (at 48.26 179.07 0)
+    (property "Footprint" "ProjectLocal:H_M2_GH60_MountingHole" (id 2) (at 48.26 179.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 48.26 179.07 0)
@@ -2019,7 +2019,7 @@
       (reference "H4") (unit 1) (value "M2 16mm Spacer") (footprint "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad")
     )
     (path "/00000000-0000-0000-0000-0000602eeb15"
-      (reference "H5") (unit 1) (value "~") (footprint "ProjectLocal:H_M2_Spacer_Hole")
+      (reference "H5") (unit 1) (value "~") (footprint "ProjectLocal:H_M2_GH60_MountingHole")
     )
     (path "/00000000-0000-0000-0000-000061bfb907"
       (reference "J1") (unit 1) (value "16-pin USB-C Connector SMD") (footprint "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11")
