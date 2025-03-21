@@ -3,9 +3,6 @@
 use embedded_hal::blocking::delay::DelayUs;
 use embedded_hal::digital::v2::{InputPin, OutputPin};
 
-use stm32f4xx_hal::stm32::TIM5;
-use stm32f4xx_hal::delay::Delay;
-
 /// Describes the hardware-level matrix of switches.
 ///
 /// Generic parameters are in order: The type of column pins,
@@ -17,33 +14,47 @@ use stm32f4xx_hal::delay::Delay;
 /// [stm32f0xx_hal::gpio::PA0::downgrade](https://docs.rs/stm32f0xx-hal/0.17.1/stm32f0xx_hal/gpio/gpioa/struct.PA0.html#method.downgrade))
 ///
 /// TIM5 is used to provide a delay during the matrix scanning.
-pub struct Matrix<C, R, const CS: usize, const RS: usize>
+pub struct Matrix<C, R, const CS: usize, const RS: usize, D>
 where
     C: InputPin,
     R: OutputPin,
+    D: DelayUs<u32>,
 {
     cols: [C; CS],
     rows: [R; RS],
-    delay: Delay<TIM5>,
-    select_delay_us: u16,
-    unselect_delay_us: u16,
+    delay: D,
+    select_delay_us: u32,
+    unselect_delay_us: u32,
 }
 
-impl<C, R, const CS: usize, const RS: usize> Matrix<C, R, CS, RS>
+impl<C, R, const CS: usize, const RS: usize, D> Matrix<C, R, CS, RS, D>
 where
     C: InputPin,
     R: OutputPin,
+    D: DelayUs<u32>,
 {
     /// Creates a new Matrix.
     ///
     /// Assumes columns are pull-up inputs,
     /// and rows are output pins which are set high when not being scanned.
-    pub fn new<E>(cols: [C; CS], rows: [R; RS], delay: Delay<TIM5>, select_delay_us: u16, unselect_delay_us: u16) -> Result<Self, E>
+    pub fn new<E>(
+        cols: [C; CS],
+        rows: [R; RS],
+        delay: D,
+        select_delay_us: u32,
+        unselect_delay_us: u32,
+    ) -> Result<Self, E>
     where
         C: InputPin<Error = E>,
         R: OutputPin<Error = E>,
     {
-        let mut res = Self { cols, rows, delay, select_delay_us, unselect_delay_us };
+        let mut res = Self {
+            cols,
+            rows,
+            delay,
+            select_delay_us,
+            unselect_delay_us,
+        };
         res.clear()?;
         Ok(res)
     }
@@ -57,6 +68,15 @@ where
         }
         Ok(())
     }
+}
+
+impl<C, R, const CS: usize, const RS: usize, D, E> crate::input::MatrixScanner<CS, RS, E>
+    for Matrix<C, R, CS, RS, D>
+where
+    C: InputPin<Error = E>,
+    R: OutputPin<Error = E>,
+    D: DelayUs<u32>,
+{
     /// Scans the matrix and checks which keys are pressed.
     ///
     /// Every row pin in order is pulled low, and then each column
@@ -64,19 +84,15 @@ where
     ///
     /// Delays for a bit after setting each pin, and after clearing
     /// each pin.
-    pub fn get<E>(&mut self) -> Result<[[bool; CS]; RS], E>
-    where
-        C: InputPin<Error = E>,
-        R: OutputPin<Error = E>,
-    {
+    fn get(&mut self) -> Result<[[bool; CS]; RS], E> {
         let mut keys = [[false; CS]; RS];
 
-        for (ri, row) in (&mut self.rows).iter_mut().enumerate() {
+        for (ri, row) in self.rows.iter_mut().enumerate() {
             row.set_low()?;
             // Delay after setting the pin low.
             // Using a timer for this is probably overkill.
             self.delay.delay_us(self.select_delay_us);
-            for (ci, col) in (&self.cols).iter().enumerate() {
+            for (ci, col) in self.cols.iter().enumerate() {
                 if col.is_low()? {
                     keys[ri][ci] = true;
                 }

@@ -1,2 +1,9 @@
+*.csg
 *.dxf
-gh60ec.svg
+*.pdf
+*.png
+*.step
+*.stl
+*.svg
+OpenSCAD_3D_Text_Generator
+dimlines.scad
