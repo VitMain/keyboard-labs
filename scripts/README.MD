@@ -1,5 +1,10 @@
 # Scripts
 
+## Nix-Shells
+
+See [docs/nix-classic-usage.md](../docs/nix-classic-usage.md) and
+[docs/nix-flake-usage.md](../docs/nix-flake-usage.md).
+
 ## Transform .kicad_pcb to .scad
 
 ### Examples

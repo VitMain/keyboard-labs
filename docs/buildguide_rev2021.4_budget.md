@@ -65,7 +65,7 @@ as nice despite taking more effort.
 
 # Required Materials
 
-<img src="https://github.com/rgoulter/keyboard-labs/blob/master/docs/images/buildlog-rev2021.4-minimal/bom-soldering-switches.JPG" />
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/buildlog-rev2021.4-minimal/bom-soldering-switches.JPG" />
 
 - 2x PCBs
 - 6x 2.4k Ohm 1/4W through-hole resistors
@@ -99,39 +99,17 @@ rather than socketing.
 
 # Required Soldering Tools
 
-<img src="https://github.com/rgoulter/keyboard-labs/blob/master/docs/images/buildlog-rev2021.4-minimal/tools.JPG" />
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/buildlog-rev2021.4-minimal/tools.JPG" />
 
-- Soldering iron.
-  - Even a very cheap one will do.
-- Soldering iron stand.
-- Fume Extractor/Filter.
-  - If you're soldering indoors, you'll need one of these.
-- Solder.
-  - I would strongly recommend using better-than-the-cheapest solder.
-    It's possible to complete this build with the cheapest solder, but
-    in my experience, it can cause unnecessary frustration.
-  - I used 0.3mm which is very thin for soldering through-hole
-    components.
-- Sponge or brass wool, for cleaning solder from the soldering iron.
-- Desoldering sucker.
-  - A cheap one should be able to do the job. However, I'd recommend
-    getting nicer-than-cheapest because if you're using a desoldering
-    sucker, you'll want to reduce frustration experienced.
-- Flush cutters.
-- Soldering mat; or cardboard or whatever to protect the surface from
-  damage while soldering.
+See [docs/soldering-tools.md](../docs/soldering-tools.md)
+
+It's also useful to have:
+
 - ST-Link v2 STM32 programmer.
   - The STM32F4 comes with a DFU bootloader. i.e. In theory, the
     STM32F4 board can be flashed without needing the ST-Link. In my
     experience, this can be finicky and unreliable; so I recommend
     using an ST-Link. The cheap knock-offs work.
-- Digital Mulitmeter.
-  - The most useful functionality here is the continuity check. A
-    cheap tool will do, but most cheap multimeters don't switch off
-    automatically, which results in the battery draining completely
-    after use if the multimeter isn't switched off.
-- Bevel/chisel soldering iron tip.
-  - Not strictly necessary, but it's what I used in this build.
 
 # Summary
 
@@ -154,7 +132,7 @@ For each half:
     at R1, R2.
 
     <img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/buildlog-rev2021.4-minimal/1-resistors-placed.JPG" />
-    <img src="https://github.com/rgoulter/keyboard-labs/blob/master/docs/images/buildlog-rev2021.4-minimal/1-resistors-placed-bottom.JPG" />
+    <img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/buildlog-rev2021.4-minimal/1-resistors-placed-bottom.JPG" />
 
     To work around
     [qmk/qmk_firmware#7855](https://github.com/qmk/qmk_firmware/issues/7855),
@@ -183,7 +161,7 @@ For each half:
     Take care to protect your eyes when using the flush cutters
     (e.g. by wearing safety glasses).
 
-    <img src="https://github.com/rgoulter/keyboard-labs/blob/master/docs/images/buildlog-rev2021.4-minimal/2-resistors-soldered-bottom.JPG" />
+    <img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/buildlog-rev2021.4-minimal/2-resistors-soldered-bottom.JPG" />
 
 3. *For the Right-Hand Side PCB only*: On the top-side of the PCB, use solder to bridge JP1 and JP2
     to either 1 or 3.

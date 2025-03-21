@@ -1,0 +1,155 @@
+kibot:
+  version: 1
+
+filters:
+  - name: fix_rotation
+    comment: 'Adjust rotation for JLC'
+    type: rot_footprint
+    extend: false
+    invert_bottom: true
+    rotations:
+      - ["^SOIC-8", 90.0]
+      - ["^TSSOP-20", 90.0]
+      - ["^USB_C_Receptacle", 180.0]
+      - ["^SOT-23-6", 0.0]
+      - ["^LED_WS2812B_PLCC4_5.0x5.0mm", 90.0]
+
+outputs:
+  - name: "gerber_zip"
+    type: compress
+    comment: "ZIP file of gerber and drill files for PCB fabrication"
+    dir: "+gerbers/%f/"
+    options:
+      files:
+        - from_output: gerbers
+          dest: /
+        - from_output: drill
+          dest: /
+
+  - name: "bom"
+    type: bom
+    comment: "KiCad BOM"
+    dir: "+docs/"
+    options:
+      format: CSV  # HTML or CSV
+
+  # Copying from project settings, which have been used with:
+  # JLCPCB, SmartPCB88
+  - name: "drill"
+    type: excellon
+    comment: "The drill files"
+    dir: "+gerbers/%f/"
+    options:
+      metric_units: false
+      pth_and_npth_single_file: false
+
+  - name: "gerbers"
+    type: gerber
+    comment: "The gerber files"
+    dir: "+gerbers/%f/"
+    layers:
+      - "F.Cu"
+      - "B.Cu"
+      - "F.Paste"
+      - "B.Paste"
+      - "F.SilkS"
+      - "B.SilkS"
+      - "F.Mask"
+      - "B.Mask"
+      - "Edge.Cuts"
+    options:
+      create_gerber_job_file: false
+      use_gerber_net_attributes: false
+      use_gerber_x2_attributes: false
+
+  - name: "pcbdraw_top"
+    type: pcbdraw
+    dir: "+docs/images/"
+    comment: "Pretty 2D render of the top of the PCB, using pcbdraw"
+    options:
+      # Include revision (-%r) to the output
+      output: "%f-%r-%i%v.%x"
+
+  - name: "pcbdraw_bottom"
+    type: pcbdraw
+    comment: "Pretty 2D render of the bottom of the PCB, using pcbdraw"
+    dir: "+docs/images/"
+    options:
+      bottom: true
+      # Include revision (-%r) to the output
+      output: "%f-%r-%i%v.%x"
+
+  - name: "schematic_print"
+    type: pdf_sch_print
+    comment: "PDF print of the schematic"
+    dir: "+docs/"
+
+  - name: "3d_top"
+    type: render_3d
+    comment: "Simple 3D view"
+    dir: "+docs/images/"
+    run_by_default: false
+    options:
+      background1: "#CCCCE5"
+      background2: "#CCCCE5"
+      height: 2160
+      width: 5120
+      zoom: 7
+      move_y: -2
+
+  - name: 'pcba_position'
+    comment: "Pick and place file, JLC style"
+    type: position
+    dir: "+pcba"
+    run_by_default: false
+    options:
+      output: '%f_cpl_jlc_%i.%x'
+      format: CSV
+      units: millimeters
+      separate_files_for_front_and_back: true
+      pre_transform: fix_rotation
+      only_smd: true
+      right_digits: 6
+      columns:
+        - id: Ref
+          name: Designator
+        - Val
+        - Package
+        - id: PosX
+          name: "Mid X"
+        - id: PosY
+          name: "Mid Y"
+        - id: Rot
+          name: Rotation
+        - id: Side
+          name: Layer
+
+  - name: 'pcba_bom'
+    comment: "BoM for JLC"
+    type: bom
+    dir: "+pcba"
+    run_by_default: false
+    options:
+      output: '%f_%i_jlc.%x'
+      ref_separator: ','
+      sort_style: 'ref'
+      columns:
+        - field: Value
+          name: Comment
+        - field: References
+          name: Designator
+        - Footprint
+        - field: 'LCSC'
+          name: 'LCSC'
+      csv:
+        hide_pcb_info: true
+        hide_stats_info: true
+        quote_all: true
+
+  - name: 'netlist'
+    comment: "Netlist for IBOM dependency"
+    type: netlist
+    dir: "."
+    run_by_default: false
+    options:
+      output: '%f.%x'

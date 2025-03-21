@@ -7,6 +7,12 @@
 [submodule "pcb/Switch_Keyboard"]
 	path = pcb/Switch_Keyboard
 	url = https://github.com/perigoso/Switch_Keyboard.git
-[submodule "pcb/keyswitches.pretty"]
-	path = pcb/keyswitches.pretty
-	url = https://github.com/daprice/keyswitches.pretty.git
+[submodule "pcb/KiCad-RP-Pico"]
+	path = pcb/KiCad-RP-Pico
+	url = https://github.com/ncarandini/KiCad-RP-Pico.git
+[submodule "cad/lib/dimensional-drawings"]
+	path = cad/lib/dimensional-drawings
+	url = https://github.com/pwpearson/dimensional-drawings.git
+[submodule "cad/lib/OpenSCAD_3D_Text_Generator"]
+	path = cad/lib/OpenSCAD_3D_Text_Generator
+	url = https://github.com/pwpearson/OpenSCAD_3D_Text_Generator.git
