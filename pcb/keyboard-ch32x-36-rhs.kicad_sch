@@ -1604,6 +1604,7 @@
 					)
 					(alternate "" input line)
 					(alternate "C2P1" bidirectional line)
+					(alternate "" input line)
 					(alternate "RX1_" bidirectional line)
 					(alternate "SCK_" bidirectional line)
 					(alternate "SDA" bidirectional line)
@@ -1810,6 +1811,7 @@
 					(alternate "MOSI" bidirectional line)
 					(alternate "O1P0" bidirectional line)
 					(alternate "O2P0" bidirectional line)
+					(alternate "" input line)
 					(alternate "PB0" bidirectional line)
 					(alternate "T1C1N_" bidirectional line)
 					(alternate "T1C2N_" bidirectional line)
@@ -1859,6 +1861,7 @@
 					(alternate "" input line)
 					(alternate "A9" bidirectional line)
 					(alternate "O2N1" bidirectional line)
+					(alternate "" input line)
 					(alternate "RX4" bidirectional line)
 					(alternate "T1C3N_" bidirectional line)
 				)
@@ -4150,7 +4153,7 @@
 		)
 		(pin "12"
 			(uuid "0e531559-06c4-4012-aba2-53a244ef1ea2")
-			(alternate "TX1_")
+			(alternate "PA10")
 		)
 		(pin "13"
 			(uuid "91a8ada9-83d4-4cc9-9084-d15d3978dbd1")
