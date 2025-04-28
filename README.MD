@@ -23,6 +23,7 @@ Plotted gerber files can be found under the GitHub repository's
 | [CH552-48-LPR](#ch552-48-lpr-low-budget-pcba-with-low-profile-redragon-switches) | 48-key ortholinear (4x12), low profile redragon, no frills        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch552-48-lpr/ch552_48-lpr-sandwich-top.JPG) |
 | [CH552-36](#ch552-36-low-budget-36-key-split-keyboard-with-smt-components) | 36-key (2x3x5+3), split, column-staggered, MX, sub-100x100, no frills        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch552-36/top-with-coiled-cable.JPG) |
 | [WABBLE-60](#wabble-60-5x12-ortholinear-ble-risc-v-powered-adaptation-of-peejs-lumberjack-pcb) | 60-key (5x12), unsplit, ortholinear, MX, GH60-compatible, "show the components", RISC-V        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/wabble-60/wabble-60.JPG) |
+| [CH32X-48](#ch32x-48-low-budget-pcba-in-bm40jj40-form-factor) | 48-key ortholinear (4x12), MX, BM40/JJ40-compatible, no frills, Risc-V | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-48/ch32x-48.JPG) |
 
 
 
@@ -616,6 +617,47 @@ There are few options for keyboard firmware for the WeAct BLE core board;
 
 WeAct also have a BLE core board which uses CH592. However, the CH592 has even
 less support than the CH58x.
+
+## CH32X-48: Low-Budget PCBA in BM40/JJ40 Form-Factor
+
+A very simple 48-key PCBA which uses the CH32X MCU.
+
+It's essentially a port of the [CH552-48](#ch552-48-low-budget-pcba-in-bm40jj40-form-factor) for the CH32X MCU.
+
+The keyboard uses rgoulter's [smart-keymap](https://github.com/rgoulter/smart-keymap) firmware,
+which uses the sophisticated and modern [Nickel](https://nickel-lang.org/) configuration language to declare keyboard and keymap definitions.
+
+The CH32X MCU is about as cheap as the CH55x MCUs, but is significantly more powerful.
+The CH32X MCU uses Risc-V, and supports writing firmware with Rust.
+
+Design goals:
+
+- PCBA, port of the [CH552-48](#ch552-48-low-budget-pcba-in-bm40jj40-form-factor) to the CH32X MCU.
+
+- Low Budget.
+
+- Same mounting holes as JJ40/BM40/PyKey40.
+
+Pictures:
+
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-48/ch32x-48.JPG" width=600 />
+
+_CH552-48 in a sandwich style case._
+
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-48/keyboard-ch32x-48-2025.4-top.svg" width=600 />
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-48/keyboard-ch32x-48-2025.4-bottom.svg" width=600 />
+
+_2D Renders of the PCB, revision rev2025.4_
+
+#### Firmware
+
+- Firmware: See [rgoulter/smart-keymap](https://github.com/rgoulter/smart-keymap)
+
+#### Plates and Cases
+
+A bottom plate can be used to protect the components underneath the PCB.
+
+Source files for plates to cut (or cases to 3D print) can be found under `cad/` in this repository.
 
 
 
