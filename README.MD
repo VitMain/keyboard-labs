@@ -25,7 +25,7 @@ Plotted gerber files can be found under the GitHub repository's
 | [WABBLE-60](#wabble-60-5x12-ortholinear-ble-risc-v-powered-adaptation-of-peejs-lumberjack-pcb) | 60-key (5x12), unsplit, ortholinear, MX, GH60-compatible, "show the components", RISC-V        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/wabble-60/wabble-60.JPG) |
 | [CH32X-48](#ch32x-48-low-budget-pcba-in-bm40jj40-form-factor) | 48-key ortholinear (4x12), MX, BM40/JJ40-compatible, no frills, Risc-V | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-48/ch32x-48.JPG) |
 | [CH32X-36](#ch32x-36-low-budget-36-key-split-keyboard-with-smt-components) | 36-key (2x3x5+3), split, column-staggered, MX, sub-100x100, no frills, RISC-V        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-36/ch32x-36.JPG) |
-| [CH32X-75-LPR](#ch32x-75-lpr-low-budget-pcba-with-low-profile-redragon-switches) | 75-key ortholinear (5x15), low profile redragon, no frills        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-75-lpr/ch32x-75.JPG) |
+| [CH32X-75-LPR](#ch32x-75-lpr-low-budget-pcba-with-low-profile-redragon-switches) | 75-key ortholinear (5x15), low profile redragon, no frills, RISC-V        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-75-lpr/ch32x-75.JPG) |
 
 
 
