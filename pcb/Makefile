@@ -55,3 +55,7 @@ keyboard-ch552-36-ibom: keyboard-ch552-36-lhs.net
 .PHONY: keyboard-wabble-60-ibom
 keyboard-wabble-60-ibom: keyboard-wabble-60.net
 	bash ../scripts/generate-wabble-60-ibom.sh
+
+.PHONY: keyboard-ch32x-36-ibom
+keyboard-ch32x-36-ibom: keyboard-ch32x-36-lhs.net
+	bash ../scripts/generate-ch32x-36-ibom.sh

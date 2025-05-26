@@ -23,6 +23,9 @@ Plotted gerber files can be found under the GitHub repository's
 | [CH552-48-LPR](#ch552-48-lpr-low-budget-pcba-with-low-profile-redragon-switches) | 48-key ortholinear (4x12), low profile redragon, no frills        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch552-48-lpr/ch552_48-lpr-sandwich-top.JPG) |
 | [CH552-36](#ch552-36-low-budget-36-key-split-keyboard-with-smt-components) | 36-key (2x3x5+3), split, column-staggered, MX, sub-100x100, no frills        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch552-36/top-with-coiled-cable.JPG) |
 | [WABBLE-60](#wabble-60-5x12-ortholinear-ble-risc-v-powered-adaptation-of-peejs-lumberjack-pcb) | 60-key (5x12), unsplit, ortholinear, MX, GH60-compatible, "show the components", RISC-V        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/wabble-60/wabble-60.JPG) |
+| [CH32X-48](#ch32x-48-low-budget-pcba-in-bm40jj40-form-factor) | 48-key ortholinear (4x12), MX, BM40/JJ40-compatible, no frills, Risc-V | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-48/ch32x-48.JPG) |
+| [CH32X-36](#ch32x-36-low-budget-36-key-split-keyboard-with-smt-components) | 36-key (2x3x5+3), split, column-staggered, MX, sub-100x100, no frills, RISC-V        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-36/ch32x-36.JPG) |
+| [CH32X-75-LPR](#ch32x-75-lpr-low-budget-pcba-with-low-profile-redragon-switches) | 75-key ortholinear (5x15), low profile redragon, no frills, RISC-V        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-75-lpr/ch32x-75.JPG) |
 
 
 
@@ -616,6 +619,132 @@ There are few options for keyboard firmware for the WeAct BLE core board;
 
 WeAct also have a BLE core board which uses CH592. However, the CH592 has even
 less support than the CH58x.
+
+## CH32X-48: Low-Budget PCBA in BM40/JJ40 Form-Factor
+
+A very simple 48-key PCBA which uses the CH32X MCU.
+
+It's essentially a port of the [CH552-48](#ch552-48-low-budget-pcba-in-bm40jj40-form-factor) for the CH32X MCU.
+
+The keyboard uses rgoulter's [smart-keymap](https://github.com/rgoulter/smart-keymap) firmware,
+which uses the sophisticated and modern [Nickel](https://nickel-lang.org/) configuration language to declare keyboard and keymap definitions.
+
+The CH32X MCU is about as cheap as the CH55x MCUs, but is significantly more powerful.
+The CH32X MCU uses Risc-V, and supports writing firmware with Rust.
+
+Design goals:
+
+- PCBA, port of the [CH552-48](#ch552-48-low-budget-pcba-in-bm40jj40-form-factor) to the CH32X MCU.
+
+- Low Budget.
+
+- Same mounting holes as JJ40/BM40/PyKey40.
+
+Pictures:
+
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-48/ch32x-48.JPG" width=600 />
+
+_CH32X-48 in a sandwich style case._
+
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-48/keyboard-ch32x-48-2025.4-top.svg" width=600 />
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-48/keyboard-ch32x-48-2025.4-bottom.svg" width=600 />
+
+_2D Renders of the PCB, revision rev2025.4_
+
+#### Firmware
+
+- Firmware: See [rgoulter/smart-keymap](https://github.com/rgoulter/smart-keymap)
+
+#### Plates and Cases
+
+A bottom plate can be used to protect the components underneath the PCB.
+
+Source files for plates to cut (or cases to 3D print) can be found under `cad/` in this repository.
+
+## CH32X-36: Low-Budget 36-key Split Keyboard with SMT Components
+
+A very simple, 36-key PCB which uses the CH32X MCU.
+
+It's essentially a port of the [CH552-36](#ch552-36-low-budget-36-key-split-keyboard-with-smt-components) for the CH32X MCU.
+
+The design takes inspiration from [TeXitoi's keyseebee](https://github.com/TeXitoi/keyseebee).
+
+The PCB is smaller than 100x100 mm2, so that it's cheaper to fabricate at
+various PCB fabricators.
+
+The keyboard uses rgoulter's [smart-keymap](https://github.com/rgoulter/smart-keymap) firmware,
+which uses the sophisticated and modern [Nickel](https://nickel-lang.org/) configuration language to declare keyboard and keymap definitions.
+
+The CH32X MCU is about as cheap as the CH55x MCUs, but is significantly more powerful.
+The CH32X MCU uses Risc-V, and supports writing firmware with Rust.
+
+Design goals:
+
+- Low Budget.
+
+- "Show the components", "just a keyboard" and "only a PCB with SMD components" from the KeySeeBee.
+
+Pictures:
+
+<img
+src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-36/ch32x-36.JPG"
+width=600 />
+
+_CH32X-36._
+
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-36/keyboard-ch32x-36-lhs-2025.1-top.svg" width=280 />
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-36/keyboard-ch32x-36-lhs-2025.1-bottom.svg" width=280 />
+
+_2D Renders of the PCB, revision rev2025.1_
+
+### Build Guides and Release Assets
+
+- [rev2025.1 Interactive BOM](https://rgoulter.com/keyboard-labs/ibom-keyboard-ch32x-36-lhs-rev2025.1.html)
+
+#### Firmware
+
+- Firmware: See [rgoulter/smart-keymap](https://github.com/rgoulter/smart-keymap)
+
+## CH32X-75-LPR: Low-Budget PCBA with Low Profile Redragon Switches
+
+A 5x15 ortholinear keyboard, which uses the CH32X MCU.
+
+The switches are Redragon's low profile switches. See notes under [CH552-48-LPR](#ch552-48-lpr-low-budget-pcba-with-low-profile-redragon-switches).
+
+As with other 5x15 ortholinear keyboards, the CH32X-75-LPR has mounts compatible with many 60% keyboard cases.
+
+The keyboard uses rgoulter's [smart-keymap](https://github.com/rgoulter/smart-keymap) firmware,
+which uses the sophisticated and modern [Nickel](https://nickel-lang.org/) configuration language to declare keyboard and keymap definitions.
+
+The LQFP-48 CH32X MCU is significantly cheaper than the LQFP-48 CH55x MCU, and is also significantly more powerful.
+The CH32X MCU uses Risc-V, and supports writing firmware with Rust.
+
+The PCB also supports using 0805 SMD LEDs for basic keyboard backlighting.
+
+Design goals:
+
+- A keyboard that uses Redragon low profile switches.
+
+- Fits in a tray-mount GH60 case.
+
+- PCBA.
+
+Pictures:
+
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-75-lpr/ch32x-75.JPG" width=600 />
+
+_CH32X-75-LPR in a GH60 low profile aluminium case._
+
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-75-lpr/keyboard-ch32x-75-2025.1-top.svg" width=600 />
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-75-lpr/keyboard-ch32x-75-2025.1-bottom.svg" width=600 />
+
+_2D Renders of the PCB, revision rev2025.1_
+
+#### Firmware
+
+Same as for the [CH32X-48](#ch32x-48-low-budget-pcba-in-bm40jj40-form-factor).
+
+- Firmware: See [rgoulter/smart-keymap](https://github.com/rgoulter/smart-keymap)
 
 
 
