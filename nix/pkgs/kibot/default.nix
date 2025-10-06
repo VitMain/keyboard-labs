@@ -41,7 +41,10 @@
 in
   python3Packages.buildPythonApplication rec {
     pname = "kibot";
-    version = "1.7.0";
+    version = "1.8.4";
+
+    pyproject = true;
+    build-system = [python3Packages.setuptools];
 
     # The macros module requires the module isn't compiled.
     # cf. https://github.com/INTI-CMNB/KiBot/issues/31
@@ -54,6 +57,7 @@ in
       kiauto
       kicadPythonModule
       lark
+      lxml
       markdown2
       pcbdraw
       pyyaml
@@ -66,6 +70,6 @@ in
 
     src = python3Packages.fetchPypi {
       inherit pname version;
-      sha256 = "sha256-/eaQXggNam/Wv/us7jahVklCm5Agm4+aQvsbSzoTwEY";
+      sha256 = "sha256-ko649d7JPbRJj2OmZ9mVwB5TLmXyZ0sEINWUg4MRwIE=";
     };
   }

@@ -3,15 +3,26 @@
   interactive-html-bom ? pkgs.callPackage ../nix/pkgs/interactive-html-bom {},
   kibot ? pkgs.callPackage ../nix/pkgs/kibot {},
   pcbdraw ? pkgs.callPackage ../nix/pkgs/pcbdraw {},
-  recordmydesktop ? pkgs.callPackage ../nix/pkgs/recordmydesktop {},
 }: let
   callPackage = pkgs.lib.callPackageWith (pkgs
     // {
-      inherit interactive-html-bom kibot pcbdraw recordmydesktop;
+      inherit interactive-html-bom kibot pcbdraw;
     });
 in {
   keyboard-100x100-minif4-dual-rgb-reversible = callPackage ./make-kibot.nix {
     board = "keyboard-100x100-minif4-dual-rgb-reversible";
+  };
+  keyboard-ch32x-36-lhs = callPackage ./make-kibot.nix {
+    board = "keyboard-ch32x-36-lhs";
+  };
+  keyboard-ch32x-36-rhs = callPackage ./make-kibot.nix {
+    board = "keyboard-ch32x-36-rhs";
+  };
+  keyboard-ch32x-48 = callPackage ./make-kibot.nix {
+    board = "keyboard-ch32x-48";
+  };
+  keyboard-ch32x-75 = callPackage ./make-kibot.nix {
+    board = "keyboard-ch32x-75";
   };
   keyboard-ch552-36-lhs = callPackage ./make-kibot.nix {
     board = "keyboard-ch552-36-lhs";
