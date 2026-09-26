@@ -61,7 +61,7 @@ def render_release(r):
     env.globals["photo_caption"] = photo_caption
     tmpl = env.get_template(tmpl_path.name)
     # Normalize arrays that may be single string in old data
-    for k in ("build_guide","ibom","plates","case_files","gerber","schematic","bom_jlc","cpl_jlc","firmware_bin","photos","pcb_renders","design_goals"):
+    for k in ("build_guide","flashing_guide","ibom","plates","case_files","gerber","schematic","bom_jlc","cpl_jlc","firmware_bin","photos","pcb_renders","design_goals"):
         if k in r and isinstance(r[k], str):
             r[k] = [r[k]]
     # Normalize prose fields so leading indentation in releases.ncl (m%" blocks)
@@ -79,6 +79,42 @@ def render_release(r):
                 else:
                     out_lines.append(line.lstrip())
             r[k] = "\n".join(out_lines).strip()
+    # Enrich firmware_bin with keymap_url so Jinja stays simple.
+    # Nickel holds firmware_bin and firmware_keymaps as separate arrays;
+    # Python joins them here (exact match for mapping entries, last-token
+    # substring for string entries like firmware-ch32x_48-basic.hex →
+    # "48-key basic"). Keeps the template as `b.keymap_url` only.
+    if "firmware_bin" in r and r["firmware_bin"]:
+        keymaps = r.get("firmware_keymaps") or []
+        enriched = []
+        for b in r["firmware_bin"]:
+            if isinstance(b, str):
+                url = None
+                for km in keymaps:
+                    name = km.get("name", "")
+                    if not name:
+                        continue
+                    if name in b:
+                        url = km.get("url")
+                        break
+                    last_space = name.split(" ")[-1]
+                    last_hyphen = name.split("-")[-1]
+                    if (last_space and last_space in b) or (last_hyphen and last_hyphen in b):
+                        url = km.get("url")
+                        break
+                enriched.append({"file": b, "keymap_url": url})
+            else:
+                url = None
+                km_name = b.get("keymap")
+                if km_name:
+                    for km in keymaps:
+                        if km.get("name") == km_name:
+                            url = km.get("url")
+                            break
+                nb = dict(b)
+                nb["keymap_url"] = url
+                enriched.append(nb)
+        r["firmware_bin"] = enriched
     return tmpl.render(**r).strip() + "\n"
 
 def main():
