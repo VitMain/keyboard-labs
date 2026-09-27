@@ -21,6 +21,7 @@ PCB_SW_1_1_POSITION = [7.5, 8.5];
 SWITCH_GRID_UNIT = 19.05;
 
 PCB_USB_CONNECTOR_MID_X = PCB_SW_1_1_POSITION[0] + 1.5 * SWITCH_GRID_UNIT;
+echo("PCB_USB_CONNECTOR_MID_X (relative to PCB origin)", PCB_USB_CONNECTOR_MID_X);
 
 switch_grid_cols = 12;
 switch_grid_rows = 4;

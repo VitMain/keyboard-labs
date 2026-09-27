@@ -1,7 +1,7 @@
 // Constants for Cases for 3D Printing
 
 // For 3D Printing, make the holes a bit bigger
-USB_CONNECTOR_HOLE_WIDTH_3DP = 12 + 1;
+USB_CONNECTOR_HOLE_WIDTH_3DP = 12 + 3;
 
 // For 3D Printing, using M2x3mm knurled threaded inserts.
 MOUNT_HOLE_POST_DIA_3DP = 8;

@@ -1,0 +1,61 @@
+# nix — wrappers for `nix build` / `nix flake check`
+
+[doc("nix flake check (pcb + firmware)")]
+check:
+    nix flake check --show-trace
+
+[doc("build a pcb package (chooser if no arg)")]
+pcb board="":
+    #!/usr/bin/env bash
+    set -euo pipefail
+    board="{{board}}"
+    if [ -z "$board" ]; then
+      pkgs=$(
+        nix eval .#packages.x86_64-linux \
+          --apply 'pkgs: builtins.concatStringsSep "\n" (builtins.attrNames pkgs)' 2>/dev/null \
+          | tr -d '"' \
+          | tr ',' '\n' \
+          | grep '^pcb-' \
+          || true
+      )
+      if [ -z "$pkgs" ]; then
+        pkgs=$(
+          ls pcb/*.kicad_pcb 2>/dev/null \
+            | xargs -n1 basename -s .kicad_pcb \
+            | sed 's/^/pcb-/'
+        )
+      fi
+      choice=$(
+        echo "$pkgs" \
+          | fzf --prompt="nix pcb> " \
+            --height=40% \
+            --reverse \
+          || true
+      )
+      board="${choice#pcb-}"
+    fi
+    [ -z "$board" ] && exit 1
+    nix build ".#pcb-$board" --show-trace
+
+[doc("build firmware packages")]
+firmware:
+    nix build ".#keyberon-firmware-bin" --show-trace
+    nix build ".#keyberon-firmware-uf2" --show-trace
+
+[doc("enter dev shells")]
+shell target="pcb":
+    #!/usr/bin/env bash
+    set -euo pipefail
+    t="{{target}}"
+    if [ -z "$t" ] || [ "$t" = "pcb" ]; then
+      nix develop .#pcb --command bash -l
+    elif [ "$t" = "firmware" ] || [ "$t" = "firmware-keyberon" ]; then
+      nix develop .#firmware-keyberon --command bash -l
+    else
+      echo "unknown shell: $t (try pcb|firmware)" >&2; exit 1
+    fi
+
+[doc("interactive chooser for nix recipes")]
+choose:
+    @just --choose --chooser "fzf --prompt='nix> ' --height=40% --reverse" 2>/dev/null \
+      || just --choose

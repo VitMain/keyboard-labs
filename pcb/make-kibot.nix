@@ -9,7 +9,6 @@
   interactive-html-bom,
   kibot,
   pcbdraw,
-  recordmydesktop,
   fluxbox,
   turbovnc,
   virtualgl,
@@ -17,7 +16,7 @@
   x11vnc,
   xclip,
   xdotool,
-  xorg,
+  xkbcomp,
 }:
 stdenvNoCC.mkDerivation rec {
   pname = "${board}-kibot";
@@ -36,14 +35,13 @@ stdenvNoCC.mkDerivation rec {
     interactive-html-bom
     kibot
     pcbdraw
-    recordmydesktop
     turbovnc
     virtualgl
     wmctrl
     x11vnc
     xclip
     xdotool
-    xorg.xkbcomp
+    xkbcomp
   ];
 
   buildPhase =

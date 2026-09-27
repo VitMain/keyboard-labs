@@ -2,24 +2,31 @@ kibot:
   version: 1
 
 filters:
-  - name: fix_rotation
-    comment: 'Adjust rotation for JLC'
-    type: rot_footprint
-    extend: false
-    invert_bottom: true
-    rotations:
-      - ["^SOIC-8", 90.0]
-      - ["^TSSOP-20", 90.0]
-      - ["^USB_C_Receptacle", 180.0]
-      - ["^SOT-23-6", 0.0]
-      - ["^LED_WS2812B_PLCC4_5.0x5.0mm", 90.0]
+  - name: dnp
+    comment: 'Exclude DNP / Do Not Populate (KiCad, KiCost, KiBom)'
+    type: generic
+    exclude_kicad_dnp: true
+    exclude_not_in_bom: true
+    exclude_not_on_board: true
+    exclude_virtual: true
+    exclude_any:
+      # 'SolderWire' footprints should be excluded.
+      - column: Footprint
+        regex: SolderWire
+      # 'PinHeaders' should excluded from PCBA BOM
+      - column: Footprint
+        regex: PinHeader
+      # Exclude empty footprint from PCBA BOM.
+      - column: Footprint
+        regex: ^$
 
 outputs:
   - name: "gerber_zip"
     type: compress
     comment: "ZIP file of gerber and drill files for PCB fabrication"
-    dir: "+gerbers/%f/"
+    dir: "+fabrication/%f/"
     options:
+      output: '%f_%r_gerber.%x'
       files:
         - from_output: gerbers
           dest: /
@@ -100,15 +107,15 @@ outputs:
   - name: 'pcba_position'
     comment: "Pick and place file, JLC style"
     type: position
-    dir: "+pcba"
+    dir: "+fabrication/%f/"
     run_by_default: false
     options:
-      output: '%f_cpl_jlc_%i.%x'
+      output: '%f_cpl_jlc.%x'
       format: CSV
       units: millimeters
-      separate_files_for_front_and_back: true
-      pre_transform: fix_rotation
-      only_smd: true
+      separate_files_for_front_and_back: false
+      exclude_filter: [_mechanical, dnp, _kibom_dnp, _kicost_dnp]
+      only_smd: false
       right_digits: 6
       columns:
         - id: Ref
@@ -127,12 +134,13 @@ outputs:
   - name: 'pcba_bom'
     comment: "BoM for JLC"
     type: bom
-    dir: "+pcba"
+    dir: "+fabrication/%f/"
     run_by_default: false
     options:
       output: '%f_%i_jlc.%x'
       ref_separator: ','
       sort_style: 'ref'
+      exclude_filter: [_mechanical, dnp, _kibom_dnp, _kicost_dnp]
       columns:
         - field: Value
           name: Comment
