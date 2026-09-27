@@ -1,0 +1,101 @@
+# pcb - UX wrappers for pcb/Makefile (kibot / fab / ibom)
+#
+# `just pcb` opens chooser;
+# `just pcb::fab <board>` builds fabrication outputs (alias for kibot).
+
+# interactive chooser entrypoint for this module
+[doc("interactive chooser for pcb recipes")]
+choose:
+    @just --choose --chooser "fzf --prompt='pcb> ' --height=40% --reverse" 2>/dev/null
+
+# run all kibot + pcba targets (same as `make -C pcb all`)
+[doc("build all kibot + pcba (make all)")]
+all:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    kibot_bin="${KIBOT:-{{ source_directory() }}/run-kibot.sh}"
+    echo "→ KIBOT=$kibot_bin make -C {{ source_directory() }} all" >&2
+    KIBOT="$kibot_bin" make -C "{{ source_directory() }}" all
+
+[doc("build all iboms (make iboms)")]
+iboms:
+    kibot_bin="${KIBOT:-{{ source_directory() }}/run-kibot.sh}"
+    make -C "{{ source_directory() }}" iboms
+
+[doc("build all pcba outputs (make pcbas) - PCBA boards only")]
+pcbas:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    kibot_bin="${KIBOT:-{{ source_directory() }}/run-kibot.sh}"
+    echo "→ KIBOT=$kibot_bin make -C {{ source_directory() }} pcbas" >&2
+    KIBOT="$kibot_bin" make -C "{{ source_directory() }}" pcbas
+
+[doc("build default kibot outputs for board (gerbers/docs, no pcba)")]
+kibot board="":
+    #!/usr/bin/env bash
+    set -euo pipefail
+    board="{{ board }}"
+    if [ -z "$board" ]; then
+      board=$(
+        {{ source_directory() }}/choose-board.sh --with-all --prompt "pcb kibot> " \
+          || true
+      )
+    fi
+    [ -z "$board" ] && exit 1
+    kibot_bin="${KIBOT:-{{ source_directory() }}/run-kibot.sh}"
+    if [ "$board" = "[all]" ] || [ "$board" = "all" ]; then
+      echo "→ KIBOT=$kibot_bin make -C {{ source_directory() }} all" >&2
+      KIBOT="$kibot_bin" make -C "{{ source_directory() }}" all
+    else
+      echo "→ KIBOT=$kibot_bin make -C {{ source_directory() }} $board-kibot" >&2
+      KIBOT="$kibot_bin" make -C "{{ source_directory() }}" "$board-kibot"
+    fi
+
+[doc("build fabrication outputs for board (gerbers/docs, no pcba) - alias for kibot")]
+fab board="": (kibot board)
+
+[doc("build fabrication outputs for board (gerbers/docs, no pcba) - alias for kibot")]
+fabrication board="": (kibot board)
+
+[doc("generate pcba outputs for board (BOM + CPL, for JLC)")]
+pcba board="":
+    #!/usr/bin/env bash
+    set -euo pipefail
+    board="{{ board }}"
+    if [ -z "$board" ]; then
+      board=$(
+        {{ source_directory() }}/choose-board.sh --with-all --prompt "pcb pcba> " \
+          || true
+      )
+    fi
+    [ -z "$board" ] && exit 1
+    kibot_bin="${KIBOT:-{{ source_directory() }}/run-kibot.sh}"
+    if [ "$board" = "[all]" ] || [ "$board" = "all" ]; then
+      echo "→ KIBOT=$kibot_bin make -C {{ source_directory() }} pcbas" >&2
+      KIBOT="$kibot_bin" make -C "{{ source_directory() }}" pcbas
+    else
+      echo "→ KIBOT=$kibot_bin make -C {{ source_directory() }} $board-pcba" >&2
+      KIBOT="$kibot_bin" make -C "{{ source_directory() }}" "$board-pcba"
+    fi
+
+# ibom: `just pcb::ibom <board>` — chooser filters to boards with ibom targets
+[doc("run ibom for board (chooser if no arg)")]
+ibom board="":
+    #!/usr/bin/env bash
+    set -euo pipefail
+    board="{{ board }}"
+    if [ -z "$board" ]; then
+      board=$(
+        {{ source_directory() }}/choose-board.sh --with-all --prompt "pcb ibom> " --ibom-only \
+          || true
+      )
+    fi
+    [ -z "$board" ] && exit 1
+    if [ "$board" = "[all]" ] || [ "$board" = "all" ]; then
+      echo "→ make -C {{ source_directory() }} iboms" >&2
+      make -C "{{ source_directory() }}" iboms
+    else
+      kibot_bin="${KIBOT:-{{ source_directory() }}/run-kibot.sh}"
+      echo "→ KIBOT=$kibot_bin make -C {{ source_directory() }} $board-ibom" >&2
+      make -C "{{ source_directory() }}" "$board-ibom"
+    fi

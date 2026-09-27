@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "491af640-c615-48ab-84d8-9b166bc1ab37")
 	(paper "A4")
 	(title_block
@@ -21,8 +21,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
 				(at -10.16 19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -30,8 +34,10 @@
 					(justify left)
 				)
 			)
-			(property "Value" "USB_C_Receptacle_USB2.0"
+			(property "Value" "USB Type-C Female 16P"
 				(at 19.05 19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -41,47 +47,57 @@
 			)
 			(property "Footprint" ""
 				(at 3.81 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
 				(at 3.81 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "USB 2.0-only Type-C Receptacle connector"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "usb universal serial bus type-C USB2.0"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "USB*C*Receptacle*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "USB_C_Receptacle_USB2.0_0_0"
@@ -97,74 +113,8 @@
 					)
 				)
 				(rectangle
-					(start 10.16 -14.986)
-					(end 9.144 -15.494)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 -12.446)
-					(end 9.144 -12.954)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 -4.826)
-					(end 9.144 -5.334)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 -2.286)
-					(end 9.144 -2.794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 0.254)
-					(end 9.144 -0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 2.794)
-					(end 9.144 2.286)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 7.874)
-					(end 9.144 7.366)
+					(start 10.16 15.494)
+					(end 9.144 14.986)
 					(stroke
 						(width 0)
 						(type default)
@@ -185,8 +135,74 @@
 					)
 				)
 				(rectangle
-					(start 10.16 15.494)
-					(end 9.144 14.986)
+					(start 10.16 7.874)
+					(end 9.144 7.366)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 2.794)
+					(end 9.144 2.286)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 0.254)
+					(end 9.144 -0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -2.286)
+					(end 9.144 -2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -4.826)
+					(end 9.144 -5.334)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -12.446)
+					(end 9.144 -12.954)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -14.986)
+					(end 9.144 -15.494)
 					(stroke
 						(width 0)
 						(type default)
@@ -208,40 +224,16 @@
 						(type background)
 					)
 				)
-				(arc
-					(start -8.89 -3.81)
-					(mid -6.985 -5.7067)
-					(end -5.08 -3.81)
+				(polyline
+					(pts
+						(xy -8.89 -3.81) (xy -8.89 3.81)
+					)
 					(stroke
 						(width 0.508)
 						(type default)
 					)
 					(fill
 						(type none)
-					)
-				)
-				(arc
-					(start -7.62 -3.81)
-					(mid -6.985 -4.4423)
-					(end -6.35 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -7.62 -3.81)
-					(mid -6.985 -4.4423)
-					(end -6.35 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(rectangle
@@ -256,9 +248,9 @@
 					)
 				)
 				(arc
-					(start -6.35 3.81)
+					(start -7.62 3.81)
 					(mid -6.985 4.4423)
-					(end -7.62 3.81)
+					(end -6.35 3.81)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -268,9 +260,9 @@
 					)
 				)
 				(arc
-					(start -6.35 3.81)
+					(start -7.62 3.81)
 					(mid -6.985 4.4423)
-					(end -7.62 3.81)
+					(end -6.35 3.81)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -280,9 +272,57 @@
 					)
 				)
 				(arc
-					(start -5.08 3.81)
+					(start -8.89 3.81)
 					(mid -6.985 5.7067)
-					(end -8.89 3.81)
+					(end -5.08 3.81)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -5.08 -3.81)
+					(mid -6.985 -5.7067)
+					(end -8.89 -3.81)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 -3.81)
+					(mid -6.985 -4.4423)
+					(end -7.62 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 -3.81)
+					(mid -6.985 -4.4423)
+					(end -7.62 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 3.81) (xy -5.08 -3.81)
+					)
 					(stroke
 						(width 0.508)
 						(type default)
@@ -302,11 +342,12 @@
 						(type outline)
 					)
 				)
-				(circle
-					(center 0 -5.842)
-					(radius 1.27)
+				(polyline
+					(pts
+						(xy -1.27 4.318) (xy 0 6.858) (xy 1.27 4.318) (xy -1.27 4.318)
+					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -315,31 +356,7 @@
 				)
 				(polyline
 					(pts
-						(xy -8.89 -3.81) (xy -8.89 3.81)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 3.81) (xy -5.08 -3.81)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -5.842) (xy 0 4.318)
+						(xy 0 -2.032) (xy 2.54 0.508) (xy 2.54 1.778)
 					)
 					(stroke
 						(width 0.508)
@@ -363,7 +380,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.032) (xy 2.54 0.508) (xy 2.54 1.778)
+						(xy 0 -5.842) (xy 0 4.318)
 					)
 					(stroke
 						(width 0.508)
@@ -373,12 +390,11 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.27 4.318) (xy 0 6.858) (xy 1.27 4.318) (xy -1.27 4.318)
-					)
+				(circle
+					(center 0 -5.842)
+					(radius 1.27)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -409,24 +425,6 @@
 						)
 					)
 					(number "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -22.86 90)
-					(length 5.08) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -526,7 +524,8 @@
 				)
 				(pin passive line
 					(at 15.24 15.24 180)
-					(length 5.08) hide
+					(length 5.08)
+					(hide yes)
 					(name "VBUS"
 						(effects
 							(font
@@ -544,7 +543,27 @@
 				)
 				(pin passive line
 					(at 0 -22.86 90)
-					(length 5.08) hide
+					(length 5.08)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -22.86 90)
+					(length 5.08)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -561,26 +580,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -22.86 90)
-					(length 5.08) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 15.24 15.24 180)
-					(length 5.08) hide
+					(length 5.08)
+					(hide yes)
 					(name "VBUS"
 						(effects
 							(font
@@ -670,7 +672,8 @@
 				)
 				(pin passive line
 					(at 15.24 15.24 180)
-					(length 5.08) hide
+					(length 5.08)
+					(hide yes)
 					(name "VBUS"
 						(effects
 							(font
@@ -679,6 +682,25 @@
 						)
 					)
 					(number "B9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -22.86 90)
+					(length 5.08)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -705,15 +727,22 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector_Generic:Conn_01x01"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
 				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -722,6 +751,8 @@
 			)
 			(property "Value" "Conn_01x01"
 				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -730,61 +761,60 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "connector"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Conn_01x01_1_1"
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(rectangle
 					(start -1.27 1.27)
 					(end 1.27 -1.27)
@@ -794,6 +824,17 @@
 					)
 					(fill
 						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin passive line
@@ -815,15 +856,22 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -832,6 +880,8 @@
 			)
 			(property "Value" "Conn_01x03"
 				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -840,53 +890,74 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "connector"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Conn_01x03_1_1"
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -907,25 +978,14 @@
 					)
 				)
 				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
 					)
 				)
 				(pin passive line
@@ -983,17 +1043,24 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
 				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1003,6 +1070,8 @@
 			)
 			(property "Value" "C"
 				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1012,53 +1081,63 @@
 			)
 			(property "Footprint" ""
 				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Unpolarized capacitor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "cap capacitor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1070,7 +1149,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1085,7 +1164,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1103,7 +1182,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1119,16 +1198,25 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:D"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
 				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1137,6 +1225,8 @@
 			)
 			(property "Value" "D"
 				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1145,47 +1235,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Diode"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "diode"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "D_0_1"
@@ -1203,10 +1303,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1215,10 +1315,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -1264,17 +1364,24 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
 				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1283,6 +1390,8 @@
 			)
 			(property "Value" "R"
 				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1291,47 +1400,57 @@
 			)
 			(property "Footprint" ""
 				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "R_0_1"
@@ -1351,7 +1470,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1369,7 +1488,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1385,6 +1504,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
@@ -1393,8 +1513,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "H"
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1403,6 +1527,8 @@
 			)
 			(property "Value" "MountingHole"
 				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1411,47 +1537,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Mounting Hole without connection"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "mounting hole"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "MountingHole*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "MountingHole_0_1"
@@ -1467,6 +1603,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "ProjectLocal:CH32X033F8P6"
 			(pin_names
@@ -1475,8 +1612,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at -12.7 27.94 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1485,6 +1626,8 @@
 			)
 			(property "Value" "CH32X033F8P6"
 				(at 0 12.7 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1493,38 +1636,46 @@
 			)
 			(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
 				(at 12.7 29.21 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 16.51 -21.59 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "CH32X033F8P6"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "ch32x033  tssop-20"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "CH32X033F8P6_0_1"
@@ -1564,6 +1715,184 @@
 					(alternate "T1BK_" bidirectional line)
 					(alternate "T3C1" bidirectional line)
 				)
+				(pin input line
+					(at -20.32 20.32 0)
+					(length 5.08)
+					(name "PA7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "A8" bidirectional line)
+					(alternate "MOSI" bidirectional line)
+					(alternate "O1P0" bidirectional line)
+					(alternate "O2P0" bidirectional line)
+					(alternate "PB0" bidirectional line)
+					(alternate "T1C1N_" bidirectional line)
+					(alternate "T1C2N_" bidirectional line)
+					(alternate "T3C2" bidirectional line)
+					(alternate "TX4" bidirectional line)
+				)
+				(pin input line
+					(at -20.32 17.78 0)
+					(length 5.08)
+					(name "PB1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "A9" bidirectional line)
+					(alternate "O2N1" bidirectional line)
+					(alternate "RX4" bidirectional line)
+					(alternate "T1C3N_" bidirectional line)
+				)
+				(pin bidirectional line
+					(at -20.32 15.24 0)
+					(length 5.08)
+					(name "PB7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "O2P2" bidirectional line)
+					(alternate "RST" bidirectional line)
+					(alternate "T1C2N" bidirectional line)
+				)
+				(pin input line
+					(at -20.32 12.7 0)
+					(length 5.08)
+					(name "PC16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "I2C_" bidirectional line)
+					(alternate "PC11" bidirectional line)
+					(alternate "RX4_5" bidirectional line)
+					(alternate "T1C4" bidirectional line)
+					(alternate "TX4_2" bidirectional line)
+					(alternate "UDM" bidirectional line)
+				)
+				(pin input line
+					(at -20.32 10.16 0)
+					(length 5.08)
+					(name "PC17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "I2C_" bidirectional line)
+					(alternate "PC10" bidirectional line)
+					(alternate "RX4_2" bidirectional line)
+					(alternate "T1ET" bidirectional line)
+					(alternate "TX4_5" bidirectional line)
+					(alternate "UDP" bidirectional line)
+				)
+				(pin input line
+					(at -20.32 7.62 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 5.08 0)
+					(length 5.08)
+					(name "PC18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "DIO" bidirectional line)
+					(alternate "I2C_" bidirectional line)
+					(alternate "T1ET_" bidirectional line)
+					(alternate "T2C1N_" bidirectional line)
+					(alternate "T3C2_" bidirectional line)
+					(alternate "TX3_" bidirectional line)
+				)
+				(pin input line
+					(at -20.32 2.54 0)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin bidirectional line
 					(at -20.32 0 0)
 					(length 5.08)
@@ -1602,9 +1931,7 @@
 							)
 						)
 					)
-					(alternate "" input line)
 					(alternate "C2P1" bidirectional line)
-					(alternate "" input line)
 					(alternate "RX1_" bidirectional line)
 					(alternate "SCK_" bidirectional line)
 					(alternate "SDA" bidirectional line)
@@ -1789,35 +2116,6 @@
 					(alternate "O2O0" power_out line)
 					(alternate "T3C2_" power_out line)
 				)
-				(pin input line
-					(at -20.32 20.32 0)
-					(length 5.08)
-					(name "PA7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "" input line)
-					(alternate "A8" bidirectional line)
-					(alternate "MOSI" bidirectional line)
-					(alternate "O1P0" bidirectional line)
-					(alternate "O2P0" bidirectional line)
-					(alternate "" input line)
-					(alternate "PB0" bidirectional line)
-					(alternate "T1C1N_" bidirectional line)
-					(alternate "T1C2N_" bidirectional line)
-					(alternate "T3C2" bidirectional line)
-					(alternate "TX4" bidirectional line)
-				)
 				(pin bidirectional line
 					(at 20.32 22.86 180)
 					(length 5.08)
@@ -1835,176 +2133,31 @@
 							)
 						)
 					)
-					(alternate "" input line)
 					(alternate "A5" power_out line)
 					(alternate "O2N0" power_out line)
 					(alternate "SCK" power_out line)
 					(alternate "TX4_1" power_out line)
 				)
-				(pin input line
-					(at -20.32 17.78 0)
-					(length 5.08)
-					(name "PB1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "" input line)
-					(alternate "A9" bidirectional line)
-					(alternate "O2N1" bidirectional line)
-					(alternate "" input line)
-					(alternate "RX4" bidirectional line)
-					(alternate "T1C3N_" bidirectional line)
-				)
-				(pin bidirectional line
-					(at -20.32 15.24 0)
-					(length 5.08)
-					(name "PB7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "O2P2" bidirectional line)
-					(alternate "RST" bidirectional line)
-					(alternate "T1C2N" bidirectional line)
-				)
-				(pin input line
-					(at -20.32 12.7 0)
-					(length 5.08)
-					(name "PC16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "I2C_" bidirectional line)
-					(alternate "PC11" bidirectional line)
-					(alternate "RX4_5" bidirectional line)
-					(alternate "T1C4" bidirectional line)
-					(alternate "TX4_2" bidirectional line)
-					(alternate "UDM" bidirectional line)
-				)
-				(pin input line
-					(at -20.32 10.16 0)
-					(length 5.08)
-					(name "PC17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "I2C_" bidirectional line)
-					(alternate "PC10" bidirectional line)
-					(alternate "RX4_2" bidirectional line)
-					(alternate "T1ET" bidirectional line)
-					(alternate "TX4_5" bidirectional line)
-					(alternate "UDP" bidirectional line)
-				)
-				(pin input line
-					(at -20.32 7.62 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -20.32 5.08 0)
-					(length 5.08)
-					(name "PC18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "DIO" bidirectional line)
-					(alternate "I2C_" bidirectional line)
-					(alternate "T1ET_" bidirectional line)
-					(alternate "T2C1N_" bidirectional line)
-					(alternate "T3C2_" bidirectional line)
-					(alternate "TX3_" bidirectional line)
-				)
-				(pin input line
-					(at -20.32 2.54 0)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Switch:SW_Push"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
 				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2014,6 +2167,8 @@
 			)
 			(property "Value" "SW_Push"
 				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2022,38 +2177,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "switch normally-open pushbutton push-button"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "SW_Push_0_1"
@@ -2080,10 +2243,9 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -2092,9 +2254,10 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -2140,15 +2303,22 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Switch:SW_SPST"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
 				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2157,6 +2327,8 @@
 			)
 			(property "Value" "SW_SPST"
 				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2165,38 +2337,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Single Pole Single Throw (SPST) switch"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "switch lever"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "SW_SPST_0_0"
@@ -2273,6 +2453,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "keebio:TRRS"
 			(pin_names
@@ -2281,8 +2462,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at 0 15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -2291,6 +2476,8 @@
 			)
 			(property "Value" "TRRS"
 				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -2299,43 +2486,38 @@
 			)
 			(property "Footprint" ""
 				(at 3.81 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 3.81 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "TRRS_0_1"
-				(rectangle
-					(start -3.81 0)
-					(end -3.81 12.7)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(rectangle
 					(start -3.81 12.7)
 					(end 5.08 12.7)
@@ -2348,8 +2530,8 @@
 					)
 				)
 				(rectangle
-					(start 5.08 0)
-					(end -3.81 0)
+					(start -3.81 0)
+					(end -3.81 12.7)
 					(stroke
 						(width 0)
 						(type default)
@@ -2361,6 +2543,17 @@
 				(rectangle
 					(start 5.08 12.7)
 					(end 5.08 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 0)
+					(end -3.81 0)
 					(stroke
 						(width 0)
 						(type default)
@@ -2444,7 +2637,191 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Hardware Mounts\n\nMay be useful for mounting the PCB to\n a 3DP case or bottom plate."
+		(exclude_from_sim no)
+		(at 89.916 167.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2ade712b-3eef-4d9c-b403-cfdeacbba260")
+	)
+	(text "UART\nFor simple printf debugging with UART."
+		(exclude_from_sim no)
+		(at 90.424 125.476 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "331134aa-a4cf-4766-8a5f-bbd25278bcc0")
+	)
+	(text "IMPORTANT:\nTake care with diode direction!"
+		(exclude_from_sim no)
+		(at 119.38 20.32 0)
+		(effects
+			(font
+				(size 1.651 1.651)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "34f03b86-ea3e-42fd-8e25-13b65736559c")
+	)
+	(text "Schematic largely similar to CH32X-36 LHS;\ndiffers by:\n- TRRS pins (because UART)\n- Pins assigned to U1 (because of PCB routing)"
+		(exclude_from_sim no)
+		(at 178.308 164.846 0)
+		(effects
+			(font
+				(size 2.794 2.794)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c8f940b-02c1-46fa-bf90-1938a0019868")
+	)
+	(text "The TRRS jacks for connecting the two PCB halves.\n\nResistors pull the data inputs up so that the PCB half\ncan be used without the other half being connected."
+		(exclude_from_sim no)
+		(at 179.578 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e931af1-9252-44dc-b604-0a17456689ef")
+	)
+	(text "Download switch.\nShort while plugging in USB to enter\nISP flashing mode. e.g. with wchisp."
+		(exclude_from_sim no)
+		(at 14.224 141.732 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f9bcbf6-61b4-4be2-888d-64cfe44316bc")
+	)
+	(text "Take care the diode direction agrees with matrix scanning\nrequirements for writing to the pin / pulling down."
+		(exclude_from_sim no)
+		(at 91.44 67.056 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "9fd42961-3655-468f-b0f4-e3dbb7c5cdee")
+	)
+	(text "Microcontroller"
+		(exclude_from_sim no)
+		(at 12.7 14.986 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "abcebda8-214f-4ba4-956f-3fbd411d6259")
+	)
+	(text "Decoupling capacitors"
+		(exclude_from_sim no)
+		(at 13.208 113.792 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b03ed32d-1de6-4b87-9e94-f496f1c54c04")
+	)
+	(text "USB Connector"
+		(exclude_from_sim no)
+		(at 13.208 56.388 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8e28577-0dfe-47f4-b813-e9a7b3febc0e")
+	)
+	(text "WCH Link interface\n(CH32X033 only compatible with WCH-LinkE or WCH-LinkW)"
+		(exclude_from_sim no)
+		(at 89.662 104.394 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bcb5ebdc-2876-4522-a76d-0976888a96a8")
+	)
+	(text "Reset Switch\nref. Figure 3-3 Typical circuit\nof CH32X datasheet."
+		(exclude_from_sim no)
+		(at 13.97 166.624 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bd6bfbcf-0e63-465a-b03d-71e67b2128c3")
+	)
+	(text "Switch Matrix"
+		(exclude_from_sim no)
+		(at 88.646 14.732 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c29e8aa7-9d28-4892-869e-753b994b125e")
+	)
+	(text "Matrix is \"row to col\" since the LHS matrix is."
+		(exclude_from_sim no)
+		(at 91.694 75.946 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f39933d3-2587-41a5-a5f0-93fdac8bd858")
+	)
+	(text_box "\n\n\n\nFor CH32X035:\n- Only PA0-PA15 and PC16-PC17 support pull down input.\n  (ref. CH32X035 datasheet, section 1.4.19).\n- PA7 cannot be used as an output.\n  (ref. notes to Table 2-1).\n\nFor \"cathode(-) faces row\",\ncurrent flows from column to row,\nmatrix scanning is done by either:\n- write col high (+), and read from pull-down rows (-),\n- write row low (-), and read from pull-up cols (+).\n\nFor \"cathode(-) faces col\",\ncurrent flows from row to column,\nmatrix scanning is done by either:\n- write row high (+), and read from pull-down cols (-),\n- write col low (-), and read from pull-up rows (+)."
+		(exclude_from_sim no)
+		(at 90.17 16.002 0)
+		(size 59.69 55.88)
+		(margins 0.9652 0.9652 0.9652 0.9652)
+		(stroke
+			(width 0.0254)
+			(type default)
+			(color 255 153 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 0 0.51)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "5acfbea2-d498-4e9c-8952-a5d4df0e2daa")
 	)
 	(junction
 		(at 187.96 55.88)
@@ -3246,191 +3623,8 @@
 		)
 		(uuid "fe43b77b-fd30-4b25-a0ff-f972961af371")
 	)
-	(text_box "\n\n\n\nFor CH32X035:\n- Only PA0-PA15 and PC16-PC17 support pull down input.\n  (ref. CH32X035 datasheet, section 1.4.19).\n- PA7 cannot be used as an output.\n  (ref. notes to Table 2-1).\n\nFor \"cathode(-) faces row\",\ncurrent flows from column to row,\nmatrix scanning is done by either:\n- write col high (+), and read from pull-down rows (-),\n- write row low (-), and read from pull-up cols (+).\n\nFor \"cathode(-) faces col\",\ncurrent flows from row to column,\nmatrix scanning is done by either:\n- write row high (+), and read from pull-down cols (-),\n- write col low (-), and read from pull-up rows (+)."
-		(exclude_from_sim no)
-		(at 90.17 16.002 0)
-		(size 59.69 55.88)
-		(stroke
-			(width 0.0254)
-			(type default)
-			(color 255 153 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 0 0.51)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "5acfbea2-d498-4e9c-8952-a5d4df0e2daa")
-	)
-	(text "Hardware Mounts\n\nMay be useful for mounting the PCB to\n a 3DP case or bottom plate."
-		(exclude_from_sim no)
-		(at 89.916 167.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2ade712b-3eef-4d9c-b403-cfdeacbba260")
-	)
-	(text "UART\nFor simple printf debugging with UART."
-		(exclude_from_sim no)
-		(at 90.424 125.476 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "331134aa-a4cf-4766-8a5f-bbd25278bcc0")
-	)
-	(text "IMPORTANT:\nTake care with diode direction!"
-		(exclude_from_sim no)
-		(at 119.38 20.32 0)
-		(effects
-			(font
-				(size 1.651 1.651)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-		)
-		(uuid "34f03b86-ea3e-42fd-8e25-13b65736559c")
-	)
-	(text "Schematic largely similar to CH32X-36 LHS;\ndiffers by:\n- TRRS pins (because UART)\n- Pins assigned to U1 (because of PCB routing)"
-		(exclude_from_sim no)
-		(at 178.308 164.846 0)
-		(effects
-			(font
-				(size 2.794 2.794)
-			)
-			(justify left bottom)
-		)
-		(uuid "8c8f940b-02c1-46fa-bf90-1938a0019868")
-	)
-	(text "The TRRS jacks for connecting the two PCB halves.\n\nResistors pull the data inputs up so that the PCB half\ncan be used without the other half being connected."
-		(exclude_from_sim no)
-		(at 179.578 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8e931af1-9252-44dc-b604-0a17456689ef")
-	)
-	(text "Download switch.\nShort while plugging in USB to enter\nISP flashing mode. e.g. with wchisp."
-		(exclude_from_sim no)
-		(at 14.224 141.732 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9f9bcbf6-61b4-4be2-888d-64cfe44316bc")
-	)
-	(text "Take care the diode direction agrees with matrix scanning\nrequirements for writing to the pin / pulling down."
-		(exclude_from_sim no)
-		(at 91.44 67.056 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "9fd42961-3655-468f-b0f4-e3dbb7c5cdee")
-	)
-	(text "Microcontroller"
-		(exclude_from_sim no)
-		(at 12.7 14.986 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "abcebda8-214f-4ba4-956f-3fbd411d6259")
-	)
-	(text "Decoupling capacitors"
-		(exclude_from_sim no)
-		(at 13.208 113.792 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b03ed32d-1de6-4b87-9e94-f496f1c54c04")
-	)
-	(text "USB Connector"
-		(exclude_from_sim no)
-		(at 13.208 56.388 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b8e28577-0dfe-47f4-b813-e9a7b3febc0e")
-	)
-	(text "WCH Link interface\n(CH32X033 only compatible with WCH-LinkE or WCH-LinkW)"
-		(exclude_from_sim no)
-		(at 89.662 104.394 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bcb5ebdc-2876-4522-a76d-0976888a96a8")
-	)
-	(text "Reset Switch\nref. Figure 3-3 Typical circuit\nof CH32X datasheet."
-		(exclude_from_sim no)
-		(at 13.97 166.624 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bd6bfbcf-0e63-465a-b03d-71e67b2128c3")
-	)
-	(text "Switch Matrix"
-		(exclude_from_sim no)
-		(at 88.646 14.732 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c29e8aa7-9d28-4892-869e-753b994b125e")
-	)
-	(text "Matrix is \"row to col\" since the LHS matrix is."
-		(exclude_from_sim no)
-		(at 91.694 75.946 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "f39933d3-2587-41a5-a5f0-93fdac8bd858")
-	)
 	(label "5V"
 		(at 50.8 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3441,7 +3635,6 @@
 	)
 	(label "COL4"
 		(at 223.52 21.59 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3452,7 +3645,6 @@
 	)
 	(label "ROW2"
 		(at 163.83 55.88 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3463,7 +3655,6 @@
 	)
 	(label "5V"
 		(at 58.42 152.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3474,7 +3665,6 @@
 	)
 	(label "DCK"
 		(at 72.39 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3485,7 +3675,6 @@
 	)
 	(label "GND"
 		(at 38.1 127 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3496,7 +3685,6 @@
 	)
 	(label "LHS_TX_RHS_RX"
 		(at 196.85 129.54 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3507,7 +3695,6 @@
 	)
 	(label "COL1"
 		(at 177.8 21.59 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3518,7 +3705,6 @@
 	)
 	(label "5V"
 		(at 38.1 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3529,7 +3715,6 @@
 	)
 	(label "RX"
 		(at 186.69 143.51 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3540,7 +3725,6 @@
 	)
 	(label "COL2"
 		(at 193.04 21.59 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3551,7 +3735,6 @@
 	)
 	(label "COL5"
 		(at 238.76 21.59 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3562,7 +3745,6 @@
 	)
 	(label "RESET"
 		(at 31.75 31.75 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3573,7 +3755,6 @@
 	)
 	(label "RESET"
 		(at 39.37 176.53 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3584,7 +3765,6 @@
 	)
 	(label "DIO"
 		(at 125.73 114.3 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3595,7 +3775,6 @@
 	)
 	(label "COL4"
 		(at 31.75 29.21 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3606,7 +3785,6 @@
 	)
 	(label "5V"
 		(at 203.2 114.3 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3617,7 +3795,6 @@
 	)
 	(label "ROW4"
 		(at 163.83 88.9 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3628,7 +3805,6 @@
 	)
 	(label "5V"
 		(at 55.88 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3639,7 +3815,6 @@
 	)
 	(label "DP"
 		(at 55.88 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3650,7 +3825,6 @@
 	)
 	(label "TX"
 		(at 186.69 140.97 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3661,7 +3835,6 @@
 	)
 	(label "DM"
 		(at 55.88 81.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3672,7 +3845,6 @@
 	)
 	(label "5V"
 		(at 210.82 124.46 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3683,7 +3855,6 @@
 	)
 	(label "LHS_TX_RHS_RX"
 		(at 190.5 143.51 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3694,7 +3865,6 @@
 	)
 	(label "GND"
 		(at 125.73 109.22 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3705,7 +3875,6 @@
 	)
 	(label "ROW1"
 		(at 163.83 39.37 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3716,7 +3885,6 @@
 	)
 	(label "5V"
 		(at 207.01 114.3 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3727,7 +3895,6 @@
 	)
 	(label "5V"
 		(at 57.15 176.53 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3738,7 +3905,6 @@
 	)
 	(label "GND"
 		(at 39.37 184.15 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3749,7 +3915,6 @@
 	)
 	(label "GND"
 		(at 210.82 132.08 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3760,7 +3925,6 @@
 	)
 	(label "GND"
 		(at 74.93 81.28 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3771,7 +3935,6 @@
 	)
 	(label "TX1"
 		(at 125.73 133.35 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3782,7 +3945,6 @@
 	)
 	(label "RX"
 		(at 72.39 31.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3793,7 +3955,6 @@
 	)
 	(label "DIO"
 		(at 31.75 41.91 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3804,7 +3965,6 @@
 	)
 	(label "COL3"
 		(at 208.28 21.59 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3815,7 +3975,6 @@
 	)
 	(label "DP"
 		(at 24.13 36.83 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3826,7 +3985,6 @@
 	)
 	(label "ROW3"
 		(at 72.39 41.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3837,7 +3995,6 @@
 	)
 	(label "COL2"
 		(at 72.39 36.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3848,7 +4005,6 @@
 	)
 	(label "DP"
 		(at 55.88 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3859,7 +4015,6 @@
 	)
 	(label "COL1"
 		(at 72.39 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3870,7 +4025,6 @@
 	)
 	(label "GND"
 		(at 64.77 81.28 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3881,7 +4035,6 @@
 	)
 	(label "ROW4"
 		(at 31.75 46.99 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3892,7 +4045,6 @@
 	)
 	(label "GND"
 		(at 40.64 104.14 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3903,7 +4055,6 @@
 	)
 	(label "DM"
 		(at 31.75 34.29 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3914,7 +4065,6 @@
 	)
 	(label "COL3"
 		(at 72.39 26.67 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3925,7 +4075,6 @@
 	)
 	(label "LHS_RX_RHS_TX"
 		(at 190.5 140.97 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3936,7 +4085,6 @@
 	)
 	(label "GND"
 		(at 50.8 127 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3947,7 +4095,6 @@
 	)
 	(label "ROW3"
 		(at 163.83 72.39 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3958,7 +4105,6 @@
 	)
 	(label "GND"
 		(at 31.75 39.37 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3969,7 +4115,6 @@
 	)
 	(label "TX"
 		(at 72.39 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3980,7 +4125,6 @@
 	)
 	(label "COL5"
 		(at 31.75 24.13 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3991,7 +4135,6 @@
 	)
 	(label "DOWNLOAD"
 		(at 24.13 34.29 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4002,7 +4145,6 @@
 	)
 	(label "DCK"
 		(at 125.73 111.76 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4013,7 +4155,6 @@
 	)
 	(label "ROW2"
 		(at 72.39 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4024,7 +4165,6 @@
 	)
 	(label "DM"
 		(at 55.88 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4035,7 +4175,6 @@
 	)
 	(label "TX1"
 		(at 72.39 24.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4046,7 +4185,6 @@
 	)
 	(label "5V"
 		(at 31.75 44.45 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4057,7 +4195,6 @@
 	)
 	(label "ROW1"
 		(at 72.39 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4068,7 +4205,6 @@
 	)
 	(label "LHS_RX_RHS_TX"
 		(at 196.85 127 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4079,7 +4215,6 @@
 	)
 	(label "DOWNLOAD"
 		(at 40.64 152.4 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4092,14 +4227,18 @@
 		(lib_id "ProjectLocal:CH32X033F8P6")
 		(at 52.07 46.99 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03e2fe61-55e6-4e02-bf13-54d052b3121a")
 		(property "Reference" "U1"
 			(at 52.07 16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4108,6 +4247,8 @@
 		)
 		(property "Value" "CH32X033F8P6"
 			(at 52.07 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4116,29 +4257,35 @@
 		)
 		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
 			(at 64.77 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 68.58 68.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "CH32X033F8P6"
 			(at 52.07 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4149,11 +4296,9 @@
 		)
 		(pin "11"
 			(uuid "afb3a4d0-9a5a-4cde-950b-4bdae233bcae")
-			(alternate "PA11")
 		)
 		(pin "12"
 			(uuid "0e531559-06c4-4012-aba2-53a244ef1ea2")
-			(alternate "PA10")
 		)
 		(pin "13"
 			(uuid "91a8ada9-83d4-4cc9-9084-d15d3978dbd1")
@@ -4181,7 +4326,6 @@
 		)
 		(pin "2"
 			(uuid "3385f5b9-c046-40e0-a9f3-c7363aa5bbc5")
-			(alternate "PA7")
 		)
 		(pin "20"
 			(uuid "7fd81f78-0bf7-4e98-9af9-23424987aa21")
@@ -4189,7 +4333,6 @@
 		)
 		(pin "3"
 			(uuid "e1d6105c-1834-4a85-ab81-908a45d0cf88")
-			(alternate "PB1")
 		)
 		(pin "4"
 			(uuid "67f83428-b60a-4568-a797-708692081d7a")
@@ -4214,7 +4357,7 @@
 			(uuid "2017c8d7-80bb-43e7-a3d1-8b28d53e38bb")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "U1")
 					(unit 1)
@@ -4226,13 +4369,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 198.12 64.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "06851f21-6af0-426b-90e4-01ce96115b2f")
 		(property "Reference" "SW_3_2"
 			(at 198.12 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4241,47 +4388,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 198.12 59.8424 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 198.12 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 198.12 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 198.12 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 198.12 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4291,7 +4448,7 @@
 			(uuid "3b478c3a-5967-4055-9602-873dcee1c177")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_3_2")
 					(unit 1)
@@ -4309,13 +4466,17 @@
 		(lib_id "Device:D")
 		(at 248.92 85.09 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "0c35bd35-c233-4ecd-b52a-913ab3213421")
 		(property "Reference" "D_4_5"
 			(at 256.54 85.09 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4325,48 +4486,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 246.888 83.947 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 248.92 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 248.92 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 248.92 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 248.92 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4376,7 +4547,7 @@
 			(uuid "6a63f5ec-cec2-41dd-bea8-3ac5fbc36111")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_4_5")
 					(unit 1)
@@ -4394,13 +4565,17 @@
 		(lib_id "Device:D")
 		(at 248.92 35.56 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "117f5699-aeda-4565-b2b4-9cef912e72d2")
 		(property "Reference" "D_1_5"
 			(at 256.54 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4410,48 +4585,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 246.888 34.417 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 248.92 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 248.92 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 248.92 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 248.92 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4461,7 +4646,7 @@
 			(uuid "a9e966d4-68c6-43e0-99a3-2fbbbdbaac59")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_1_5")
 					(unit 1)
@@ -4479,13 +4664,17 @@
 		(lib_id "Device:D")
 		(at 218.44 85.09 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "11fb8aa4-2b7b-421e-9644-9d66b7e3008b")
 		(property "Reference" "D_4_3"
 			(at 226.06 85.09 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4495,48 +4684,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 216.408 83.947 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 218.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 218.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 218.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 218.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4546,7 +4745,7 @@
 			(uuid "7aa67e40-b884-4be7-8959-04aed5234e77")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_4_3")
 					(unit 1)
@@ -4564,13 +4763,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 228.6 81.28 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "12a53681-39e5-46a5-b83f-139c61d6cc90")
 		(property "Reference" "SW_4_4"
 			(at 228.6 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4579,47 +4782,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 228.6 76.3524 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 228.6 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 228.6 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 228.6 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 228.6 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4629,7 +4842,7 @@
 			(uuid "f77cfab4-43ce-4735-a928-7413bca1d04d")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_4_4")
 					(unit 1)
@@ -4647,13 +4860,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 198.12 31.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "16967d49-1727-4c94-85fd-f417264b7944")
 		(property "Reference" "SW_1_2"
 			(at 198.12 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4662,47 +4879,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 198.12 26.8224 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 198.12 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 198.12 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 198.12 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 198.12 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4712,7 +4939,7 @@
 			(uuid "defb267d-6b24-44f9-b26a-61586039fd7c")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_1_2")
 					(unit 1)
@@ -4730,13 +4957,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 228.6 31.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "19ac2087-9851-47dc-84b1-8d942ecf642f")
 		(property "Reference" "SW_1_4"
 			(at 228.6 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4745,47 +4976,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 228.6 26.8224 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 228.6 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 228.6 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 228.6 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 228.6 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4795,7 +5036,7 @@
 			(uuid "cdbec2d6-63bd-4ea3-98ef-7cc540ded831")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_1_4")
 					(unit 1)
@@ -4813,13 +5054,17 @@
 		(lib_id "Mechanical:MountingHole")
 		(at 93.98 181.61 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "1c81f76a-f1c4-41fa-b3dd-bda378aef69f")
 		(property "Reference" "H3"
 			(at 96.52 180.4416 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4829,6 +5074,8 @@
 		)
 		(property "Value" "M2 mounting hole"
 			(at 96.52 182.753 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4838,33 +5085,39 @@
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965"
 			(at 93.98 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 93.98 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 93.98 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "H3")
 					(unit 1)
@@ -4882,14 +5135,18 @@
 		(lib_id "Device:R")
 		(at 64.77 77.47 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d545dec-ef09-4976-8a2a-98f7e9565b3a")
 		(property "Reference" "R1"
 			(at 67.31 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4899,6 +5156,8 @@
 		)
 		(property "Value" "5.1k"
 			(at 67.31 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4908,38 +5167,46 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 62.992 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 64.77 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 64.77 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC" "C27834"
+		(property "LCSC" ""
 			(at 64.77 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4949,7 +5216,7 @@
 			(uuid "7b53be38-08bd-4d62-aaba-cc5027e538cd")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "R1")
 					(unit 1)
@@ -4961,13 +5228,17 @@
 		(lib_id "Mechanical:MountingHole")
 		(at 93.98 176.53 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "1f2aa985-9927-41c1-aecb-10d2f484145b")
 		(property "Reference" "H2"
 			(at 96.52 175.3616 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4977,6 +5248,8 @@
 		)
 		(property "Value" "M2 mounting hole"
 			(at 96.52 177.673 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4986,33 +5259,39 @@
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965"
 			(at 93.98 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 93.98 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 93.98 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "H2")
 					(unit 1)
@@ -5030,14 +5309,18 @@
 		(lib_id "Connector_Generic:Conn_01x01")
 		(at 130.81 133.35 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24cc37c5-4b49-404a-bc37-9cbc87e98d44")
 		(property "Reference" "J4"
 			(at 133.35 132.0799 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5047,6 +5330,8 @@
 		)
 		(property "Value" "Conn_01x02"
 			(at 133.35 134.6199 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5056,36 +5341,42 @@
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 130.81 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 130.81 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 130.81 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "ee48d749-2e80-4b88-b587-abdc94f4a9d2")
 		)
 		(instances
-			(project "keyboard-ch32x-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "J4")
 					(unit 1)
@@ -5097,13 +5388,17 @@
 		(lib_id "Device:D")
 		(at 233.68 85.09 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "2ea69083-0a5c-4ed2-b01d-4cb33634c66a")
 		(property "Reference" "D_4_4"
 			(at 241.3 85.09 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5113,48 +5408,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 231.648 83.947 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 233.68 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 233.68 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 233.68 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 233.68 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5164,7 +5469,7 @@
 			(uuid "7e34c72c-0d77-411c-b16b-65b3cca82133")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_4_4")
 					(unit 1)
@@ -5182,13 +5487,17 @@
 		(lib_id "Device:D")
 		(at 248.92 68.58 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "3888b825-a771-49d5-96f5-a82fe2aa335b")
 		(property "Reference" "D_3_5"
 			(at 256.54 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5198,48 +5507,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 246.888 67.437 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 248.92 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 248.92 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 248.92 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 248.92 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5249,7 +5568,7 @@
 			(uuid "9fe79073-e816-4db0-a9a3-76ff3abc0696")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_3_5")
 					(unit 1)
@@ -5267,14 +5586,18 @@
 		(lib_id "Connector:USB_C_Receptacle_USB2.0")
 		(at 40.64 81.28 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43bddfb4-e0d4-4dcd-b7e2-422045c4c526")
 		(property "Reference" "J1"
 			(at 40.64 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5283,6 +5606,8 @@
 		)
 		(property "Value" "USB Type-C Receptacle 12-pin"
 			(at 40.64 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5291,38 +5616,46 @@
 		)
 		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
 			(at 44.45 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
 			(at 44.45 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 40.64 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C165948"
 			(at 40.64 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "A1"
@@ -5377,7 +5710,7 @@
 			(uuid "42c1b036-fb2a-411a-ad86-1064ecff241a")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "J1")
 					(unit 1)
@@ -5389,14 +5722,18 @@
 		(lib_id "Switch:SW_SPST")
 		(at 45.72 152.4 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "472f82c5-fe49-4683-b873-c14973f22ecb")
 		(property "Reference" "SW2"
 			(at 45.72 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5405,6 +5742,8 @@
 		)
 		(property "Value" "SW_SPST"
 			(at 45.72 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5413,29 +5752,35 @@
 		)
 		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
 			(at 45.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 45.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 45.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5445,7 +5790,7 @@
 			(uuid "4fcde02f-c2d2-4c5e-b0a3-2c66f6531ee6")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW2")
 					(unit 1)
@@ -5457,13 +5802,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 243.84 64.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "4a150ff3-abca-4b06-976d-7dca28edc5d9")
 		(property "Reference" "SW_3_5"
 			(at 243.84 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5472,47 +5821,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 243.84 59.8424 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 243.84 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 243.84 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 243.84 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 243.84 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5522,7 +5881,7 @@
 			(uuid "ff54b99b-261d-4062-92b3-7f00b709fcda")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_3_5")
 					(unit 1)
@@ -5540,14 +5899,18 @@
 		(lib_id "Device:C")
 		(at 38.1 123.19 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c68f5bf-7a1f-42f7-ab50-136262e609ed")
 		(property "Reference" "C2"
 			(at 41.91 121.9199 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5557,6 +5920,8 @@
 		)
 		(property "Value" "4.7uF"
 			(at 41.91 124.4599 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5566,38 +5931,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 39.0652 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 38.1 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 38.1 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC" "C1779"
+		(property "LCSC" ""
 			(at 38.1 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5607,7 +5980,7 @@
 			(uuid "e7bfc115-c038-46e7-bcca-cc1ba02f80a9")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "C2")
 					(unit 1)
@@ -5619,13 +5992,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 182.88 48.26 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "4e14770a-b2b2-4dd4-a9b9-4975270382b1")
 		(property "Reference" "SW_2_1"
 			(at 182.88 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5634,47 +6011,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 182.88 43.3324 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 182.88 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 182.88 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 182.88 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 182.88 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5684,7 +6071,7 @@
 			(uuid "add6529e-e120-469e-bfb0-3b83f0ec14d4")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_2_1")
 					(unit 1)
@@ -5702,13 +6089,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 213.36 81.28 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "52b25d0e-ed95-4c0d-bf0d-e5435e6f5883")
 		(property "Reference" "SW_4_3"
 			(at 213.36 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5717,47 +6108,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 213.36 76.3524 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 213.36 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 213.36 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 213.36 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 213.36 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5767,7 +6168,7 @@
 			(uuid "91b23d25-be07-4c23-b7e7-3648929bdec4")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_4_3")
 					(unit 1)
@@ -5785,13 +6186,17 @@
 		(lib_id "Device:R")
 		(at 207.01 118.11 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "54ec43a9-eeb4-4bae-9872-d1db6efab37d")
-		(property "Reference" "R2"
+		(property "Reference" "R6"
 			(at 208.788 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5801,6 +6206,8 @@
 		)
 		(property "Value" "2.2k - 10k"
 			(at 208.788 119.253 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5810,38 +6217,46 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 205.232 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 207.01 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor (0805)"
 			(at 207.01 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Comment" "R3, for RGB LEDs. R5, R6 for OLED screen"
 			(at 207.01 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5857,7 +6272,7 @@
 					(unit 1)
 				)
 			)
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "R6")
 					(unit 1)
@@ -5869,13 +6284,17 @@
 		(lib_id "Device:D")
 		(at 203.2 52.07 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "57d55851-a07e-43e4-ab83-bfed5756b916")
 		(property "Reference" "D_2_2"
 			(at 210.82 52.07 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5885,48 +6304,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 201.168 50.927 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 203.2 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 203.2 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 203.2 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 203.2 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5936,7 +6365,7 @@
 			(uuid "0da026b5-84a4-4c8a-8d43-6ccb06c00f2c")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_2_2")
 					(unit 1)
@@ -5954,14 +6383,18 @@
 		(lib_id "Device:R")
 		(at 53.34 176.53 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5806cbde-a693-49a2-83de-07fabb5053f4")
 		(property "Reference" "R3"
 			(at 53.34 170.18 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5970,6 +6403,8 @@
 		)
 		(property "Value" "330R"
 			(at 53.34 172.72 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5978,38 +6413,46 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 53.34 178.308 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 53.34 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 53.34 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC" "C17630"
+		(property "LCSC" ""
 			(at 53.34 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6019,7 +6462,7 @@
 			(uuid "6219fb32-65f8-4a97-82e1-582c2efd0512")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "R3")
 					(unit 1)
@@ -6031,13 +6474,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 243.84 31.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "592d6641-4d66-4bfb-9b3c-6b7f75fdd756")
 		(property "Reference" "SW_1_5"
 			(at 243.84 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6046,47 +6493,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 243.84 26.8224 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 243.84 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 243.84 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 243.84 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 243.84 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6096,7 +6553,7 @@
 			(uuid "0c4ab3e5-5d4d-4e39-ab1f-158268f51e5b")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_1_5")
 					(unit 1)
@@ -6114,13 +6571,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 213.36 31.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "5a94f7dd-acf6-4a25-b362-81aae0680167")
 		(property "Reference" "SW_1_3"
 			(at 213.36 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6129,47 +6590,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 213.36 26.8224 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 213.36 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 213.36 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 213.36 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 213.36 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6179,7 +6650,7 @@
 			(uuid "f9b92224-538c-4d89-8c81-b4933ebe83fd")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_1_3")
 					(unit 1)
@@ -6197,13 +6668,17 @@
 		(lib_id "Device:D")
 		(at 187.96 52.07 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f8d78ea-3aad-43bc-8757-957e8cbeaf90")
 		(property "Reference" "D_2_1"
 			(at 195.58 52.07 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6213,48 +6688,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 185.928 50.927 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 187.96 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 187.96 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 187.96 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 187.96 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6264,7 +6749,7 @@
 			(uuid "0f3e83b8-d229-42f2-a6c9-1369c2095260")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_2_1")
 					(unit 1)
@@ -6282,14 +6767,18 @@
 		(lib_id "Device:C")
 		(at 50.8 123.19 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60552b33-b304-4970-ba68-da2711eb7299")
 		(property "Reference" "C1"
 			(at 54.61 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6297,8 +6786,10 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 54.61 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6308,38 +6799,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 51.7652 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 50.8 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 50.8 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC" "C28233"
+		(property "LCSC" ""
 			(at 50.8 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6349,7 +6848,7 @@
 			(uuid "00acda13-ae20-46cb-97b8-df01387c39fa")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "C1")
 					(unit 1)
@@ -6361,13 +6860,17 @@
 		(lib_id "Device:D")
 		(at 218.44 52.07 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "62ee1f98-22b1-49c9-a373-322b856edccb")
 		(property "Reference" "D_2_3"
 			(at 226.06 52.07 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6377,48 +6880,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 216.408 50.927 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 218.44 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 218.44 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 218.44 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 218.44 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6428,7 +6941,7 @@
 			(uuid "230574c9-2004-497f-9f16-04f96e129467")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_2_3")
 					(unit 1)
@@ -6446,14 +6959,18 @@
 		(lib_id "Switch:SW_SPST")
 		(at 44.45 176.53 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66ec6485-b11d-4060-bd25-795bc3812991")
 		(property "Reference" "SW1"
 			(at 44.45 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6462,6 +6979,8 @@
 		)
 		(property "Value" "SW_SPST"
 			(at 44.45 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6470,29 +6989,35 @@
 		)
 		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
 			(at 44.45 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 44.45 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 44.45 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6502,7 +7027,7 @@
 			(uuid "fce1e23b-d2a2-4162-9bf3-52b0b9c0b125")
 		)
 		(instances
-			(project "keyboard-ch32x-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW1")
 					(unit 1)
@@ -6514,13 +7039,17 @@
 		(lib_id "keebio:TRRS")
 		(at 219.71 134.62 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "69245913-749a-4a07-b949-47ec3ef49771")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 225.5012 126.9238 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6530,6 +7059,8 @@
 		)
 		(property "Value" "PJ-320A"
 			(at 225.5012 129.6162 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6539,38 +7070,46 @@
 		)
 		(property "Footprint" "Keebio-Parts:TRRS-PJ-320A"
 			(at 223.52 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 223.52 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "TRRS (4-pole) Jack"
 			(at 219.71 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Comment" ""
 			(at 219.71 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6592,7 +7131,7 @@
 					(unit 1)
 				)
 			)
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "J2")
 					(unit 1)
@@ -6604,13 +7143,17 @@
 		(lib_id "Device:D")
 		(at 233.68 52.07 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "6b61a6fe-0c0d-4751-93e8-dc11c7df354f")
 		(property "Reference" "D_2_4"
 			(at 241.3 52.07 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6620,48 +7163,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 231.648 50.927 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 233.68 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 233.68 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 233.68 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 233.68 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6671,7 +7224,7 @@
 			(uuid "048ba3c2-32a5-4a16-88d3-e8ea488491fb")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_2_4")
 					(unit 1)
@@ -6689,13 +7242,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 198.12 48.26 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "74efa7c0-3533-49f8-9a5b-65431c3123dc")
 		(property "Reference" "SW_2_2"
 			(at 198.12 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6704,47 +7261,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 198.12 43.3324 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 198.12 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 198.12 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 198.12 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 198.12 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6754,7 +7321,7 @@
 			(uuid "f7d7e233-e4fe-43b8-ac7d-1f74c7ee4a52")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_2_2")
 					(unit 1)
@@ -6772,13 +7339,17 @@
 		(lib_id "Device:D")
 		(at 218.44 35.56 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7bca1b33-0fea-4764-8c7a-2515fbc07a3f")
 		(property "Reference" "D_1_3"
 			(at 226.06 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6788,48 +7359,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 216.408 34.417 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 218.44 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 218.44 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 218.44 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 218.44 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6839,7 +7420,7 @@
 			(uuid "7cdd28e0-c72e-443f-8e2c-4e75c9c78071")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_1_3")
 					(unit 1)
@@ -6857,13 +7438,17 @@
 		(lib_id "Device:D")
 		(at 203.2 68.58 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7bf9744d-2230-4e67-825b-8a637a7fd7b3")
 		(property "Reference" "D_3_2"
 			(at 210.82 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6873,48 +7458,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 201.168 67.437 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 203.2 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 203.2 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 203.2 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 203.2 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6924,7 +7519,7 @@
 			(uuid "4916a2ee-c35a-4b1c-b50d-4e4c8b64df14")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_3_2")
 					(unit 1)
@@ -6942,13 +7537,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 243.84 48.26 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7cf93dfe-fd06-4904-b256-10e5131b897c")
 		(property "Reference" "SW_2_5"
 			(at 243.84 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6957,47 +7556,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 243.84 43.3324 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 243.84 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 243.84 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 243.84 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 243.84 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7007,7 +7616,7 @@
 			(uuid "533feab4-1bf9-4c2a-b90a-da88164ad1b0")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_2_5")
 					(unit 1)
@@ -7025,22 +7634,28 @@
 		(lib_id "Device:R")
 		(at 54.61 152.4 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8259958b-0fec-4944-b109-dd78a4e727dc")
 		(property "Reference" "R4"
 			(at 54.61 146.05 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 54.61 148.59 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7049,38 +7664,46 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 54.61 154.178 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 54.61 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 54.61 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC" "C17414"
+		(property "LCSC" ""
 			(at 54.61 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7090,7 +7713,7 @@
 			(uuid "00e3a359-69d7-41a4-adfc-16311f9af084")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "R4")
 					(unit 1)
@@ -7102,13 +7725,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 213.36 64.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "8829751f-07b3-4d6b-a14d-05c427cfa469")
 		(property "Reference" "SW_3_3"
 			(at 213.36 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7117,47 +7744,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 213.36 59.8424 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 213.36 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 213.36 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 213.36 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 213.36 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7167,7 +7804,7 @@
 			(uuid "47206976-bfae-475d-9421-904c0f2eb613")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_3_3")
 					(unit 1)
@@ -7185,13 +7822,17 @@
 		(lib_id "Device:D")
 		(at 233.68 35.56 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "891649d3-5a49-4e30-92fc-7646f9c15085")
 		(property "Reference" "D_1_4"
 			(at 241.3 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7201,48 +7842,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 231.648 34.417 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 233.68 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 233.68 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 233.68 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 233.68 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7252,7 +7903,7 @@
 			(uuid "7876f645-0ef8-4cca-b22a-97a52141bd34")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_1_4")
 					(unit 1)
@@ -7270,13 +7921,17 @@
 		(lib_id "Device:D")
 		(at 248.92 52.07 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "8a4ebfa6-32cb-4303-8f19-65805977b22b")
 		(property "Reference" "D_2_5"
 			(at 256.54 52.07 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7286,48 +7941,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 246.888 50.927 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 248.92 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 248.92 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 248.92 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 248.92 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7337,7 +8002,7 @@
 			(uuid "7d25c2f7-15c8-42e6-96ec-e95438333335")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_2_5")
 					(unit 1)
@@ -7355,13 +8020,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 243.84 81.28 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "8ed66a8a-4635-4279-9947-3459a4d5a21e")
 		(property "Reference" "SW_4_5"
 			(at 243.84 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7370,47 +8039,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 243.84 76.3524 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 243.84 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 243.84 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 243.84 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 243.84 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7420,7 +8099,7 @@
 			(uuid "377e2da6-f9ea-479c-81c8-0fa237060f00")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_4_5")
 					(unit 1)
@@ -7438,13 +8117,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 213.36 48.26 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "9ac3590f-d294-404a-b4e7-81e89549db2b")
 		(property "Reference" "SW_2_3"
 			(at 213.36 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7453,47 +8136,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 213.36 43.3324 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 213.36 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 213.36 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 213.36 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 213.36 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7503,7 +8196,7 @@
 			(uuid "588622e5-aabb-40d5-bd38-497fb00591cb")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_2_3")
 					(unit 1)
@@ -7521,13 +8214,17 @@
 		(lib_id "Mechanical:MountingHole")
 		(at 93.98 171.45 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "9e055034-7746-4475-9c17-64a52285e662")
 		(property "Reference" "H1"
 			(at 96.52 170.2816 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7537,6 +8234,8 @@
 		)
 		(property "Value" "M2 mounting hole"
 			(at 96.52 172.593 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7546,33 +8245,39 @@
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965"
 			(at 93.98 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 93.98 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 93.98 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "H1")
 					(unit 1)
@@ -7590,14 +8295,18 @@
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 130.81 111.76 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1c05eab-dbae-4671-8e4d-b0488e734ba5")
 		(property "Reference" "J5"
 			(at 134.62 110.4899 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7607,6 +8316,8 @@
 		)
 		(property "Value" "Conn_01x03"
 			(at 134.62 113.0299 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7616,29 +8327,35 @@
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 130.81 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 130.81 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 130.81 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "3"
@@ -7651,7 +8368,7 @@
 			(uuid "4ec3e26e-d4bc-420d-a7f0-4850eb64723f")
 		)
 		(instances
-			(project ""
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "J5")
 					(unit 1)
@@ -7663,14 +8380,18 @@
 		(lib_id "Device:C")
 		(at 39.37 180.34 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4555dcb-0fc5-4bd5-b90c-d9c2c4312f62")
 		(property "Reference" "C3"
 			(at 43.18 179.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7678,8 +8399,10 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 43.18 181.6099 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7689,38 +8412,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 40.3352 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 39.37 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 39.37 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC" "C28233"
+		(property "LCSC" ""
 			(at 39.37 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7730,7 +8461,7 @@
 			(uuid "e61beada-0a15-4c0e-b7bc-7c3ef65e1986")
 		)
 		(instances
-			(project "keyboard-ch32x-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "C3")
 					(unit 1)
@@ -7742,13 +8473,17 @@
 		(lib_id "Device:D")
 		(at 187.96 68.58 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "a80867e0-c0fc-4777-a995-076d9780de88")
 		(property "Reference" "D_3_1"
 			(at 195.58 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7758,48 +8493,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 185.928 67.437 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 187.96 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 187.96 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 187.96 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 187.96 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7809,7 +8554,7 @@
 			(uuid "cd9105d6-5e4f-41e8-bc8d-218ff55ac103")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_3_1")
 					(unit 1)
@@ -7827,13 +8572,17 @@
 		(lib_id "Device:D")
 		(at 233.68 68.58 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "af3d0a24-25e4-4a8e-8f06-766f8668be8b")
 		(property "Reference" "D_3_4"
 			(at 241.3 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7843,48 +8592,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 231.648 67.437 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 233.68 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 233.68 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 233.68 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 233.68 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7894,7 +8653,7 @@
 			(uuid "fa3f0d4f-5ba3-4fd1-a366-b6c3bb50f5fb")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_3_4")
 					(unit 1)
@@ -7912,13 +8671,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 182.88 64.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "b814fe0e-bca6-432c-84f8-119c0e7a58cc")
 		(property "Reference" "SW_3_1"
 			(at 182.88 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7927,47 +8690,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 182.88 59.8424 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 182.88 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 182.88 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 182.88 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 182.88 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7977,7 +8750,7 @@
 			(uuid "e3db7273-6971-4c6b-ad94-970fd4e3d062")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_3_1")
 					(unit 1)
@@ -7995,14 +8768,18 @@
 		(lib_id "Device:R")
 		(at 74.93 77.47 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba19255e-129a-472d-8d93-06b7008dceb8")
 		(property "Reference" "R2"
 			(at 77.47 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8012,6 +8789,8 @@
 		)
 		(property "Value" "5.1k"
 			(at 77.47 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8021,38 +8800,46 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 73.152 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 74.93 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 74.93 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC" "C27834"
+		(property "LCSC" ""
 			(at 74.93 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8062,7 +8849,7 @@
 			(uuid "2f27951b-91e3-4386-8adf-da31963cdcfb")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "R2")
 					(unit 1)
@@ -8074,13 +8861,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 228.6 64.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "c795a2c3-1d45-4fbd-8134-85ea48e07859")
 		(property "Reference" "SW_3_4"
 			(at 228.6 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8089,47 +8880,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 228.6 59.8424 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 228.6 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 228.6 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 228.6 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 228.6 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8139,7 +8940,7 @@
 			(uuid "2ed6fe10-7726-4289-b546-c7a17a780aa7")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_3_4")
 					(unit 1)
@@ -8157,13 +8958,17 @@
 		(lib_id "Device:R")
 		(at 203.2 118.11 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "d0145f59-44a1-4b35-a7aa-d56fc9009f3f")
-		(property "Reference" "R1"
+		(property "Reference" "R5"
 			(at 198.12 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8173,6 +8978,8 @@
 		)
 		(property "Value" "2.2k - 10k"
 			(at 190.5 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8182,38 +8989,46 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 201.422 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 203.2 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor (0805)"
 			(at 203.2 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Comment" "R3, for RGB LEDs. R5, R6 for OLED screen"
 			(at 203.2 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8229,7 +9044,7 @@
 					(unit 1)
 				)
 			)
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "R5")
 					(unit 1)
@@ -8241,13 +9056,17 @@
 		(lib_id "Device:D")
 		(at 203.2 35.56 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "d75f8e5d-a58b-4f3f-8ea6-0776357484d1")
 		(property "Reference" "D_1_2"
 			(at 210.82 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8257,48 +9076,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 201.168 34.417 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 203.2 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 203.2 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 203.2 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 203.2 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8308,7 +9137,7 @@
 			(uuid "8f08b3fc-e298-4804-a0d6-b98ea4cce1ad")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_1_2")
 					(unit 1)
@@ -8326,13 +9155,17 @@
 		(lib_id "Mechanical:MountingHole")
 		(at 93.98 186.69 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "db8f2589-89d9-4b7f-9ecb-33a3e95f2a7f")
 		(property "Reference" "H4"
 			(at 96.52 185.5216 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8342,6 +9175,8 @@
 		)
 		(property "Value" "M2 mounting hole"
 			(at 96.52 187.833 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8351,33 +9186,39 @@
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965"
 			(at 93.98 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 93.98 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 93.98 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "H4")
 					(unit 1)
@@ -8395,13 +9236,17 @@
 		(lib_id "Mechanical:MountingHole")
 		(at 93.98 191.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "dd7bf95e-5dac-43a6-9cfd-6282a684a01d")
 		(property "Reference" "H5"
 			(at 96.52 190.6016 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8411,6 +9256,8 @@
 		)
 		(property "Value" "M2 mounting hole"
 			(at 96.52 192.913 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8420,33 +9267,39 @@
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965"
 			(at 93.98 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 93.98 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 93.98 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "H5")
 					(unit 1)
@@ -8464,13 +9317,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 182.88 31.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "dea85b80-bbd1-48b8-b02f-07a51890df6e")
 		(property "Reference" "SW_1_1"
 			(at 182.88 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8479,47 +9336,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 182.88 26.8224 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 182.88 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 182.88 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 182.88 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 182.88 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8529,7 +9396,7 @@
 			(uuid "6e0d0265-8473-427b-9313-504d2e72f14c")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_1_1")
 					(unit 1)
@@ -8547,13 +9414,17 @@
 		(lib_id "Device:D")
 		(at 218.44 68.58 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e7f51874-0c6c-4092-ad92-e7b139bbb86d")
 		(property "Reference" "D_3_3"
 			(at 226.06 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8563,48 +9434,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 216.408 67.437 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 218.44 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 218.44 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 218.44 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 218.44 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8614,7 +9495,7 @@
 			(uuid "42842201-3c1f-47cc-bfdf-9c032e66cd13")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_3_3")
 					(unit 1)
@@ -8632,13 +9513,17 @@
 		(lib_id "Device:D")
 		(at 187.96 35.56 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "f2ca1d6e-b07c-4ef1-b7ce-ca22136cc034")
 		(property "Reference" "D_1_1"
 			(at 195.58 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8648,48 +9533,58 @@
 		)
 		(property "Value" "1N4148"
 			(at 185.928 34.417 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 187.96 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 187.96 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode (0805)"
 			(at 187.96 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C81598"
 			(at 187.96 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8699,7 +9594,7 @@
 			(uuid "8d94252f-d796-4406-a957-df02ee471c3f")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "D_1_1")
 					(unit 1)
@@ -8717,13 +9612,17 @@
 		(lib_id "Switch:SW_Push")
 		(at 228.6 48.26 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "f9aee48b-89c1-403a-aa9b-0c88e67537cb")
 		(property "Reference" "SW_2_4"
 			(at 228.6 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8732,47 +9631,57 @@
 		)
 		(property "Value" "MX-compatible"
 			(at 228.6 43.3324 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ProjectLocal:SW_Cherry_MX_PCB_1.00u_BSilkRef"
 			(at 228.6 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 228.6 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mechanical Keyboard Switch"
 			(at 228.6 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 228.6 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8782,7 +9691,7 @@
 			(uuid "77d24474-33dc-4a53-b1a1-a35cdb32e82d")
 		)
 		(instances
-			(project "keyboard-ch552-36-lhs"
+			(project "keyboard-ch32x-36-rhs"
 				(path "/491af640-c615-48ab-84d8-9b166bc1ab37"
 					(reference "SW_2_4")
 					(unit 1)
@@ -8801,4 +9710,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

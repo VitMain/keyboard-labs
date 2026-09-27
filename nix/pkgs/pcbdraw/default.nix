@@ -4,7 +4,7 @@
   python3Packages,
   python3,
   kicad,
-  pcbnewTransition ? import ../pythonPackages/pcbnewTransition {inherit kicad python3 python3Packages;},
+  mistune ? import ../pythonPackages/mistune {inherit python3Packages;},
   pybars3 ? import ../pythonPackages/pybars3 {inherit python3Packages;},
   svgpathtools ? import ../pythonPackages/svgpathtools {inherit python3Packages;},
 }:
@@ -12,6 +12,9 @@ with python3Packages;
   buildPythonApplication rec {
     pname = "pcbdraw";
     version = "1.1.3-pre";
+
+    pyproject = true;
+    build-system = [python3Packages.setuptools];
 
     # fails on Windows-specific test
     doCheck = false;
@@ -21,17 +24,21 @@ with python3Packages;
       lxml
       mistune
       numpy
-      PyVirtualDisplay
-      pcbnewTransition
+      pyvirtualdisplay
+      pcbnewtransition
       pillow
       pybars3
       pyyaml
       svgpathtools
-      Wand
-      wxPython_4_2
+      wand
+      wxpython
+      versioneer
     ];
 
-    patches = [./allow-polygon-board-outlines.patch];
+    patches = [
+      ./allow-polygon-board-outlines.patch
+      ./pr-180.patch
+    ];
 
     # INTI-CMNB (GitHub owner of KiBot) also maintains a fork
     # https://github.com/INTI-CMNB/PcbDraw
@@ -39,6 +46,6 @@ with python3Packages;
       owner = "yaqwsx";
       repo = "PcbDraw";
       rev = "1264f28eb0cb96ab7ec44ecb09c5d50eef508ec5";
-      hash = "sha256-SrKILQ/CsNK+juV47iIHBz/4Htja4oykQXFGmJ7P/L0=";
+      hash = "sha256-IA08AeT+ootxa5GjU9O9F7Pghu5RUjV7kWR8K1ttIcw=";
     };
   }

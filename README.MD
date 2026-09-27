@@ -10,22 +10,26 @@ Kicad source files are in `pcb`.
 Plotted gerber files can be found under the GitHub repository's
 [releases](https://github.com/rgoulter/keyboard-labs/releases/).
 
+Assembled PCBs for selected designs are available on the
+ [RGoulter's Keyboard Labs store](https://www.elecrow.com/store/RGoultersKeyboardLabs).
+
 | Designation  | Summary/Keywords                                                                       | Image                                                                                                                                                 |
 |--------------|----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [X-1](https://github.com/rgoulter/keyboard-labs#x-1-36-key-split-reversible-pcb-with-weact-studio-mini-f4-dev-board) | 36-key (2x3x5+3), split, column-staggered, MX/choc, sub-100x100, per-key RGB LED, ARM       | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/photo-keyboard-x-1_rev2021.5-mx-top.JPG)                              |
 | [X-2](#x-2-5x12-ortholinear-arm-powered-adaptation-of-peejs-lumberjack-pcb)          | 60-key (5x12), un-split, ortholinear, MX/choc, GH60-compatible, "show the components", ARM  | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/photo-keyboard-x-2_rev2021.1-mx-top.JPG)                              |
 | [X-2 HSRGB](#x-2-hsrgb-5x12-ortholinear-arm-powered-adaptation-of-peejs-lumberjack-pcb-with-hotswap-and-per-key-rgb)    | 60-key (5x12), un-split, ortholinear, MX/choc, GH60-compatible, "show the components", HotSwap, per-key RGB, ARM  | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/photo-keyboard-x-2-hsrgb_rev2022.1-front.JPG)   |
 | [PyKey40 Lite](#pykey40-lite-no-frills-subset-of-the-pykey60-in-bm40jj40-form-factor) | Planck-MIT (4x12, 1x2U), ortholinear, MX, BM40/JJ40-compatible, PCBA, no frills, ARM        |                                                                                                                                                       |
-| [PyKey40 HSRGB](#pykey40-hsrgb-4x12-ortholinear-with-hotswap-and-rgb-in-bm40jj40-form-factor) | Planck-MIT (4x12, 1x2U), ortholinear, MX, BM40/JJ40-compatible, PCBA, HotSwap, per-key RGB LED, ARM        |  ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/pykey40-hsrgb/pykey40-hsrgb-top.JPG) |
+| [PyKey40 HSRGB](#pykey40-hsrgb-4x12-ortholinear-with-hotswap-and-rgb-in-bm40jj40-form-factor) | Planck-MIT (4x12), ortholinear, MX, BM40/JJ40-compatible, PCBA, HotSwap, per-key RGB LED, ARM        |  ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/pykey40-hsrgb/pykey40-hsrgb-top.JPG) |
 | [Pico42](#pico42-simple-hand-solderable-pcb-in-bm40jj40-form-factor) | 42-key ortholinear, MX/choc, BM40/JJ40-compatible, no frills, ARM        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/pico42/pico42-mx_lowprofile_case.JPG) |
 | [CH552-44](#ch552-44-low-budget-hand-solderable-pcb-in-bm40jj40-form-factor) | 44-key ortholinear, MX, BM40/JJ40-compatible, no frills        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch552-44/ch552_44-sandwich-top.JPG) |
 | [CH552-48](#ch552-48-low-budget-pcba-in-bm40jj40-form-factor) | 48-key ortholinear (4x12), MX, BM40/JJ40-compatible, no frills        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch552-48/ch552-48-top.JPG) |
 | [CH552-48-LPR](#ch552-48-lpr-low-budget-pcba-with-low-profile-redragon-switches) | 48-key ortholinear (4x12), low profile redragon, no frills        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch552-48-lpr/ch552_48-lpr-sandwich-top.JPG) |
 | [CH552-36](#ch552-36-low-budget-36-key-split-keyboard-with-smt-components) | 36-key (2x3x5+3), split, column-staggered, MX, sub-100x100, no frills        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch552-36/top-with-coiled-cable.JPG) |
 | [WABBLE-60](#wabble-60-5x12-ortholinear-ble-risc-v-powered-adaptation-of-peejs-lumberjack-pcb) | 60-key (5x12), unsplit, ortholinear, MX, GH60-compatible, "show the components", RISC-V        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/wabble-60/wabble-60.JPG) |
-| [CH32X-48](#ch32x-48-low-budget-pcba-in-bm40jj40-form-factor) | 48-key ortholinear (4x12), MX, BM40/JJ40-compatible, no frills, Risc-V | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-48/ch32x-48.JPG) |
-| [CH32X-36](#ch32x-36-low-budget-36-key-split-keyboard-with-smt-components) | 36-key (2x3x5+3), split, column-staggered, MX, sub-100x100, no frills, RISC-V        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-36/ch32x-36.JPG) |
+| [CH32X-48](#ch32x-48-low-budget-pcba-in-bm40jj40-form-factor) | 48-key ortholinear (4x12), MX, BM40/JJ40-compatible, no frills, Risc-V · [🛒 Elecrow](https://www.elecrow.com/ch32x-48-40-ortholinear-keyboard-pcb.html) | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-48/ch32x-48.JPG) |
+| [CH32X-36](#ch32x-36-low-budget-36-key-split-keyboard-with-smt-components) | 36-key (2x3x5+3), split, column-staggered, MX, sub-100x100, no frills, RISC-V · [🛒 Elecrow](https://www.elecrow.com/ch32x-36-split-36-key-ergonomic-keyboard.html) | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-36/ch32x-36.JPG) |
 | [CH32X-75-LPR](#ch32x-75-lpr-low-budget-pcba-with-low-profile-redragon-switches) | 75-key ortholinear (5x15), low profile redragon, no frills, RISC-V        | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-75-lpr/ch32x-75.JPG) |
+| [CH32X-60-improved](#ch32x-60-improved-ch32x-60-improved-ansi-60-keyboard) | 66-key (ANSI 60% with thumb keys), row-staggered, MX, GH60-compatible, PCBA, RISC-V · [🛒 Elecrow](https://www.elecrow.com/ch32x-60-improved-ansi-keyboard-pcb.html) | ![](https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-60-improved/keyboard-ch32x-60-improved-2026.1-top.jpg) |
 
 
 
@@ -73,7 +77,7 @@ _2D Renders of the PCB, revision rev2021.5_
 
 ### Build Guides
 
-- [rev2021.4 Budget Build Guide](docs/buildguide_rev2021.4_budget.md)
+- [rev2021.4 Budget Build Guide](https://rgoulter.com/keyboard-labs/docs/buildguide_rev2021.4_budget/)
 
 - [rev2021.5 Interactive BOM](https://rgoulter.com/keyboard-labs/ibom-keyboard-100x100-minif4-dual-rgb-reversible-rev2021.5.html)
 
@@ -265,7 +269,7 @@ _2D Renders of the PCB, revision rev2023.2_
 
 - [rev2023.1 Interactive BOM](https://rgoulter.com/keyboard-labs/ibom-keyboard-pico42-rev2023.1.html)
 
-- [rev2023.1 Build Guide Notes](docs/buildguide-keyboard_pico42-rev2023.1.md)
+- [rev2023.1 Build Guide Notes](https://rgoulter.com/keyboard-labs/docs/buildguide-keyboard_pico42-rev2023.1/)
 
 
 
@@ -321,13 +325,13 @@ _2D Renders of the PCB, revision rev2023.2_
 
 - [rev2023.2 Interactive BOM](https://rgoulter.com/keyboard-labs/ibom-keyboard-ch552-44-rev2023.2.html)
 
-- [rev2023.2 Build Guide Notes](https://github.com/rgoulter/keyboard-labs/blob/master/docs/buildguide-keyboard_ch552-44-rev2023.2.md)
+- [rev2023.2 Build Guide Notes](https://rgoulter.com/keyboard-labs/docs/buildguide-keyboard_ch552-44-rev2023.2/)
 
 #### Firmware
 
 - Firmware: See [rgoulter/fak-config](https://github.com/rgoulter/fak-config)
 
-(NOTE: for flashing new firmware, on Windows, [I recommend the official WCHISPTool](https://www.wch-ic.com/downloads/WCHISPTool_Setup_exe.html). For flashing using open-source software, it's much easier to flash firmware onto the CH552 from Linux, e.g. [docs/guide-liveiso-flashing-fak.md](https://github.com/rgoulter/keyboard-labs/blob/master/docs/guide-liveiso-flashing-fak.md)).
+(NOTE: for flashing new firmware, on Windows, [I recommend the official WCHISPTool](https://www.wch-ic.com/downloads/WCHISPTool_Setup_exe.html). For flashing using open-source software, it's much easier to flash firmware onto the CH552 from Linux, e.g. [docs/guide-liveiso-flashing-fak.md](https://rgoulter.com/keyboard-labs/docs/guide-liveiso-flashing-fak/)).
 
 #### Plates and Cases
 
@@ -382,7 +386,7 @@ _2D Renders of the PCB, revision rev2023.1_
 
 - Firmware: See [rgoulter/fak-config](https://github.com/rgoulter/fak-config)
 
-(NOTE: for flashing new firmware, on Windows, [I recommend the official WCHISPTool](https://www.wch-ic.com/downloads/WCHISPTool_Setup_exe.html). For flashing using open-source software, it's much easier to flash firmware onto the CH552 from Linux, e.g. [docs/guide-liveiso-flashing-fak.md](https://github.com/rgoulter/keyboard-labs/blob/master/docs/guide-liveiso-flashing-fak.md)).
+(NOTE: for flashing new firmware, on Windows, [I recommend the official WCHISPTool](https://www.wch-ic.com/downloads/WCHISPTool_Setup_exe.html). For flashing using open-source software, it's much easier to flash firmware onto the CH552 from Linux, e.g. [docs/guide-liveiso-flashing-fak.md](https://rgoulter.com/keyboard-labs/docs/guide-liveiso-flashing-fak/)).
 
 #### Plates and Cases
 
@@ -455,7 +459,7 @@ Same as for the [CH552-48](#ch552-48-low-budget-pcba-in-bm40jj40-form-factor).
 
 - Firmware: See [rgoulter/fak-config](https://github.com/rgoulter/fak-config)
 
-(NOTE: for flashing new firmware, on Windows, [I recommend the official WCHISPTool](https://www.wch-ic.com/downloads/WCHISPTool_Setup_exe.html). For flashing using open-source software, it's much easier to flash firmware onto the CH552 from Linux, e.g. [docs/guide-liveiso-flashing-fak.md](https://github.com/rgoulter/keyboard-labs/blob/master/docs/guide-liveiso-flashing-fak.md)).
+(NOTE: for flashing new firmware, on Windows, [I recommend the official WCHISPTool](https://www.wch-ic.com/downloads/WCHISPTool_Setup_exe.html). For flashing using open-source software, it's much easier to flash firmware onto the CH552 from Linux, e.g. [docs/guide-liveiso-flashing-fak.md](https://rgoulter.com/keyboard-labs/docs/guide-liveiso-flashing-fak/)).
 
 #### Plates and Cases
 
@@ -527,7 +531,7 @@ _2D Renders of the PCB, revision rev2023.1_
 
 - Firmware: See [rgoulter/fak-config](https://github.com/rgoulter/fak-config)
 
-(NOTE: for flashing new firmware, on Windows, [I recommend the official WCHISPTool](https://www.wch-ic.com/downloads/WCHISPTool_Setup_exe.html). For flashing using open-source software, it's much easier to flash firmware onto the CH552 from Linux, e.g. [docs/guide-liveiso-flashing-fak.md](https://github.com/rgoulter/keyboard-labs/blob/master/docs/guide-liveiso-flashing-fak.md)).
+(NOTE: for flashing new firmware, on Windows, [I recommend the official WCHISPTool](https://www.wch-ic.com/downloads/WCHISPTool_Setup_exe.html). For flashing using open-source software, it's much easier to flash firmware onto the CH552 from Linux, e.g. [docs/guide-liveiso-flashing-fak.md](https://rgoulter.com/keyboard-labs/docs/guide-liveiso-flashing-fak/)).
 
 
 
@@ -570,7 +574,7 @@ _2D Renders of the PCB, revision rev2024.2_
 
 - [rev2024.2 Interactive BOM](https://rgoulter.com/keyboard-labs/ibom-keyboard-wabble-60-rev2024.2.html)
 
-- [rev2024.2 Build Guide](docs/buildguide_wabble-60_rev2024.2.md)
+- [rev2024.2 Build Guide](https://rgoulter.com/keyboard-labs/docs/buildguide_wabble-60_rev2024.2/)
 
 #### Firmware
 
@@ -632,6 +636,9 @@ which uses the sophisticated and modern [Nickel](https://nickel-lang.org/) confi
 The CH32X MCU is about as cheap as the CH55x MCUs, but is significantly more powerful.
 The CH32X MCU uses Risc-V, and supports writing firmware with Rust.
 
+> [!TIP]
+> **Available on Elecrow:** [CH32X-48 4×12 Ortholinear Keyboard PCB](https://www.elecrow.com/ch32x-48-40-ortholinear-keyboard-pcb.html)
+
 Design goals:
 
 - PCBA, port of the [CH552-48](#ch552-48-low-budget-pcba-in-bm40jj40-form-factor) to the CH32X MCU.
@@ -646,10 +653,10 @@ Pictures:
 
 _CH32X-48 in a sandwich style case._
 
-<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-48/keyboard-ch32x-48-2025.4-top.svg" width=600 />
-<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-48/keyboard-ch32x-48-2025.4-bottom.svg" width=600 />
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-48/keyboard-ch32x-48-2025.2-top.svg" width=600 />
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-48/keyboard-ch32x-48-2025.2-bottom.svg" width=600 />
 
-_2D Renders of the PCB, revision rev2025.4_
+_2D Renders of the PCB, revision rev2025.2_
 
 #### Firmware
 
@@ -677,6 +684,9 @@ which uses the sophisticated and modern [Nickel](https://nickel-lang.org/) confi
 
 The CH32X MCU is about as cheap as the CH55x MCUs, but is significantly more powerful.
 The CH32X MCU uses Risc-V, and supports writing firmware with Rust.
+
+> [!TIP]
+> **Available on Elecrow:** [CH32X-36 Split 36-Key Ergonomic Keyboard](https://www.elecrow.com/ch32x-36-split-36-key-ergonomic-keyboard.html)
 
 Design goals:
 
@@ -746,7 +756,72 @@ Same as for the [CH32X-48](#ch32x-48-low-budget-pcba-in-bm40jj40-form-factor).
 
 - Firmware: See [rgoulter/smart-keymap](https://github.com/rgoulter/smart-keymap)
 
+## CH32X-60-improved: CH32X-60 Improved ANSI 60% Keyboard
 
+This keyboard-labs repository is
+ filled with ortholinear and column-staggered keyboard designs.
+I think these have more coherent designs than the standard keyboard layout.
+I wanted to try a design which stays similar to the standard layout,
+ only improving *one* aspect: replace the standard layout's
+ unnecessarily large spacebar.
+
+The CH32X-60-improved retains the familiarity of the ANSI 60% keyboard,
+ but improves the design by replacing the 6.25u spacebar with 6 keys.
+
+The CH32X-60-improved mounts into common GH60 tray-mount cases.
+
+The keyboard uses rgoulter's [smart-keymap](https://github.com/rgoulter/smart-keymap) firmware,
+ which uses the sophisticated and modern [Nickel](https://nickel-lang.org/) configuration language
+  to declare keyboard and keymap definitions.
+
+The CH32X MCU uses RISC-V and supports writing firmware with Rust.
+
+> [!TIP]
+> **Available on Elecrow:**
+>  [CH32X-60 Improved ANSI Keyboard PCB](https://www.elecrow.com/ch32x-60-improved-ansi-keyboard-pcb.html)
+
+Design goals:
+
+- An ANSI 60% board replacing the 6.25u spacebar with thumb keys,
+  reusing the GH60 tray-mount case ecosystem.
+
+- PCBA with CH32X for low-budget, Rust-capable firmware.
+
+- MX switches with PCB-mount stabilizers.
+
+Pictures:
+
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-60-improved/keyboard-ch32x-60-improved-2026.1-top.jpg" width=600 />
+
+_CH32X-60-improved, revision rev2026.1_
+
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-60-improved/keyboard-ch32x-60-improved-2026.1-top.svg" width=600 />
+<img src="https://raw.githubusercontent.com/rgoulter/keyboard-labs/master/docs/images/keyboards/ch32x-60-improved/keyboard-ch32x-60-improved-2026.1-bottom.svg" width=600 />
+
+_2D Renders of the PCB, revision rev2026.1_
+
+#### Firmware
+
+- Firmware: See [rgoulter/smart-keymap](https://github.com/rgoulter/smart-keymap)
+  (board `ch32x-60-improved` under `ncl/boards/`).
+
+#### Plates and Cases
+
+A switch plate protects MX switches and stabilizers
+ and ensures correct spacing.
+
+Source files for plates to cut (or cases to 3D print)
+ can be found under `cad/` in this repository:
+
+- `cad/ch32x_60_improved_plate.py` — build123d (FR4 1.6 mm, GH60 outline);
+  run with `uv run --script cad/ch32x_60_improved_plate.py --out plate.svg`.
+
+- `cad/keyboard_plates/ch32x-60-improved_plate.scad` — OpenSCAD.
+
+- Positions and GH60 dimensions are shared via
+  `cad/ch32x_60_positions.scad` and `cad/gh60_dimensions.scad`
+  (also used by `scripts/kicad_helpers/ch32x_60_improved.py`
+   to place footprints in KiCad).
 
 # CAD Designs
 
@@ -845,21 +920,21 @@ _Example output of OpenSCAD code, which makes use of the Kicad PCB data to const
 
 # Notes
 
-- [docs/guide-liveiso-flashing-fak.md](https://github.com/rgoulter/keyboard-labs/blob/master/docs/guide-liveiso-flashing-fak.md):
+- [docs/guide-liveiso-flashing-fak.md](https://rgoulter.com/keyboard-labs/docs/guide-liveiso-flashing-fak/):
   guide for using the Live ISO on a bootable USB to flash Fak firmware.
 
-- [docs/pcb-rivets.md](https://github.com/rgoulter/keyboard-labs/blob/master/docs/pcb-rivets.md):
+- [docs/pcb-rivets.md](https://rgoulter.com/keyboard-labs/docs/pcb-rivets/):
   notes on usage of PCB rivets for allowing hot-swapping switches on
   PCBs with regular footprints.
 
-- [docs/socketing-devboards.md](https://github.com/rgoulter/keyboard-labs/blob/master/docs/socketing-devboards.md):
+- [docs/socketing-devboards.md](https://rgoulter.com/keyboard-labs/docs/socketing-devboards/):
   some comparison photos of some different ways of socketing
   devboards.
 
-- [docs/rgb-leds-logic-level-shifting.md](https://github.com/rgoulter/keyboard-labs/blob/master/docs/rgb-leds-logic-level-shifting.md):
+- [docs/rgb-leds-logic-level-shifting.md](https://rgoulter.com/keyboard-labs/docs/rgb-leds-logic-level-shifting/):
   some notes on logic level shifting.
 
-- [docs/stm32-flashing-and-bootloaders.md](https://github.com/rgoulter/keyboard-labs/blob/master/docs/stm32-flashing-and-bootloaders.md):
+- [docs/stm32-flashing-and-bootloaders.md](https://rgoulter.com/keyboard-labs/docs/stm32-flashing-and-bootloaders/):
   some notes on bootloaders for STM32.
 
 - [cad/docs/freecad-techdraw-threads.md](https://github.com/rgoulter/keyboard-labs/blob/master/cad/docs/freecad-techdraw-threads.md):
